@@ -2,7 +2,6 @@ import React from 'react';
 
 import Helmet from 'react-helmet';
 
-import SearchBar from '../../Components/SearchBar';
 import ItemChrome from '../../Components/Items/Chrome';
 import ItemFirefox from '../../Components/Items/Firefox';
 
