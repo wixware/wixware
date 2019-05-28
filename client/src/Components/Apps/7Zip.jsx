@@ -1,6 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+import Filters from '../Filters';
+
 import ItemVLC from '../Items/VLC';
 import ItemCCleaner from '../Items/CCleaner';
 import ItemCamtasia from '../Items/Camtasia';
@@ -34,6 +36,7 @@ function The7Zip() {
         <meta name='description' content="Download 7 Zip Software and/or more software from wixware.com" />
         <meta name='keywords' content='7zip, 7zip file extractor, download zip software, free download unzip software, file compressor, file extractor' />
       </Helmet>
+      <Filters/>
       <div className='container-fluid mt-5 pl-5 pr-5'>
         <div className='row'>
           <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 box pl-5 pr-5 pt-5 pb-5'>
