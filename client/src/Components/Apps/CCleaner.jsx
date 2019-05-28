@@ -1,6 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+import Filters from '../Filters';
+
 import ItemVLC from '../Items/VLC';
 import ItemFirefox from '../Items/Firefox';
 import ItemCorelCAD from '../Items/CorelCAD';
