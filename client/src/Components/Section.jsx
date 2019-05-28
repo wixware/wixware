@@ -31,7 +31,12 @@ function Section() {
         <meta name='description' content="We're building world's fastest web to serve you hundereds of software at no cost. Try Wixware - It's Free forever." />
         <meta name='keywords' content='best web for software, fastest website for software' />
       </Helmet>
-      <div className='container-fluid pl-5 pr-5 mt-5 text-center'>
+      <div className='container-fluid pl-5 pr-5 mt-5'>
+        <div className='row ml-2 text-left'>
+          <div className='col-12'>
+            <h4 className='text-dark'>Featured</h4>
+          </div>
+        </div>
         <div className='row'>
           <ItemOBS />
           <ItemCCleaner />
@@ -39,12 +44,22 @@ function Section() {
           <ItemBlender />
           <ItemAudacity />
         </div>
+        <div className='row ml-2 text-left'>
+          <div className='col-12'>
+            <h4 className='text-dark'>Trending this week</h4>
+          </div>
+        </div>
         <div className='row'>
           <ItemInkscape />
           <ItemAvast />
           <ItemCamtasia />
           <ItemChrome />
           <ItemKMPlayer />
+        </div>
+        <div className='row ml-2 text-left'>
+          <div className='col-12'>
+            <h4 className='text-dark'>Recently added</h4>
+          </div>
         </div>
         <div className='row'>
           <ItemFirefox />
