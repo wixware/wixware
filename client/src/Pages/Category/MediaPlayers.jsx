@@ -9,7 +9,7 @@ import ItemAudacity from '../../Components/Items/Audacity';
 
 function CategoryMediaPlayers() {
   return (
-    <div className='container-fluid pl-5 pr-5'>
+    <div className='container-fluid pl-5 pr-5 mt-5'>
       <Helmet>
         <title>Media Players - Wixware</title>
         <meta name='description' content="We've a handful of best media players categorized just for you. Select any player and download for free." />
