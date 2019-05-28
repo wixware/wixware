@@ -15,7 +15,6 @@ function CategoryFileCompressors() {
         <meta name='keywords' content='file compressor, free file compressor, best file compressor free download' />
         <meta name='author' content='Wixware Team' />
       </Helmet>
-      <SearchBar/>
       <div className='row'>
         <div className='col-10'>
           <h1 className='text-primary'> <i className='fas fa-file-archive'></i> File Compressors</h1>
