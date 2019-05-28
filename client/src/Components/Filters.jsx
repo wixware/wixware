@@ -5,7 +5,7 @@ function Filters() {
   return (
     <div className='container-fluid'>
       <div className='row ml-auto mr-auto'>
-        <a className='btn btn-sm col-2 align-self-center'>
+        <a className='btn btn-sm col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-12 align-self-center'>
           <span>Filter by Collections</span>
         </a>
         <a href='/' className='btn btn-light btn-sm col-xl-1 col-lg-2 col-md-4 col-sm-4 col-xs-12'>
