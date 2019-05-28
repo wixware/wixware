@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 function Privacy () {
   return (
-    <div className='mb-4'>
+    <div className='mt-5 mb-4'>
       <Helmet>
         <title>Privacy - Wixware</title>
         <meta name='description' content="Learn about privacy at wixware" />

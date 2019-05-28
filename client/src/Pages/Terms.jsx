@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 function Terms () {
   return (
-    <div className='mb-4'>
+    <div className='mt-5 mb-4'>
       <Helmet>
         <title>Terms - Wixware</title>
         <meta name='description' content="Learn about wixware terms and conditions." />
