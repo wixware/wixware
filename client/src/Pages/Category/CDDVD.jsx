@@ -13,7 +13,6 @@ function CategoryCDDVD() {
         <meta name='keywords' content='cd burner, dvd burner, dvd software free download' />
         <meta name='author' content='Wixware Team' />
       </Helmet>
-      <SearchBar/>
       <div className='row'>
         <div className='col-12 align-self-center'>
           <h4>Hi, we're working on a few things. Try again later.</h4>
