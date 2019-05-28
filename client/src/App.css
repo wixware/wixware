@@ -58,8 +58,8 @@
 
 .box-alt {
   background: #fff !important;
-  border-radius: 2px;
-  box-shadow: 8px 8px 8px -7px #cccccc55;
+  border-radius: 0px;
+  border: 1px solid #282c3422;
 }
 
 .box-alt:hover {
