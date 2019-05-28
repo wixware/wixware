@@ -38,7 +38,6 @@ function CCleaner() {
         <meta name='description' content="Download C Cleaner and/or more software from wixware.com" />
         <meta name='keywords' content='ccleaner, download c cleaner, free c cleaner, latest c cleaner, c cleaner for windows' />
       </Helmet>
-      <SearchBar/>
       <div className='container-fluid mt-5 pl-5 pr-5'>
         <div className='row'>
           <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 box pl-5 pr-5 pt-5 pb-5'>
