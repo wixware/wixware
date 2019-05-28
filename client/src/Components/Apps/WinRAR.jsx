@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import SearchBar from '../SearchBar';
 import ItemVLC from '../Items/VLC';
 import ItemIDM from '../Items/ItemIDM';
 import ItemFirefox from '../Items/Firefox';
@@ -35,7 +34,6 @@ function WinRAR() {
         <meta name='description' content="Download WinRAR and/or more software from wixware.com" />
         <meta name='keywords' content='rar, winrar, download winrar, free download winrar, file extractor' />
       </Helmet>
-      <SearchBar/>
       <div className='container-fluid mt-5 pl-5 pr-5'>
         <div className='row'>
           <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 box pl-5 pr-5 pt-5 pb-5'>
