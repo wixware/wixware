@@ -73,6 +73,23 @@
   text-decoration: none !important;
 }
 
+
+.box-alt-2 {
+  background: #cccccc55 !important;
+  border-radius: 0px;
+}
+
+.box-alt-2:hover {
+  cursor: pointer;
+  transition-duration: .3s;
+  transition-delay: 100ms;
+  box-shadow: 10px 10px 20px -5px #cccccc55;
+}
+
+.box-alt-2 > a {
+  text-decoration: none !important;
+}
+
 /*  */
 
 ul > li {
