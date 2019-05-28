@@ -15,7 +15,6 @@ function CategoryAntivirus() {
         <meta name='keywords' content='antivirus, malware removal, best antivirus free download' />
         <meta name='author' content='Wixware Team' />
       </Helmet>
-      <SearchBar/>
       <div className='row'>
         <div className='col-10'>
           <h1 className='text-primary'> <i className='fas fa-shield-alt'></i> Antivirus</h1>
