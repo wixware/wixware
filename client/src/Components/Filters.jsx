@@ -9,7 +9,7 @@ function Filters() {
           <h4 className='text-dark'>Filter by Collections / Categories</h4>
         </div>
       </div>
-      <div className='row mt-4 pl-4 pr-4 filters'>
+      <div className='row text-center mt-4 pl-4 pr-4 filters'>
         <Link to='/' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
             All
         </Link>
@@ -32,7 +32,7 @@ function Filters() {
             Downloaders
         </Link>
       </div>
-      <div className='row mt-2 pr-4 pl-4 filters'>
+      <div className='row text-center mt-2 pr-4 pl-4 filters'>
         <Link to='/category/photo-editors' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
             Photo Editors
         </Link>
