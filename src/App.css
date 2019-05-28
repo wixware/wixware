@@ -1,0 +1,277 @@
+.App {
+  font-family: 'Circular Std Book';
+  color: #00000099;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.no-border-radius {
+  border-radius: 0 0 0 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.form-control {
+  background: #fff;
+  border-radius: 0px !important;
+  color: #007bff !important;
+  border: 1px solid #007bff !important;
+}
+
+
+.btn {
+  border-radius: 0px !important;
+}
+
+.box {
+  background: #fff !important;
+  box-shadow: 10px 10px 8px -7px #cccccc55;
+  border-radius: 2px;
+}
+
+.box-alt {
+  background: #fff !important;
+  border-radius: 2px;
+  box-shadow: 8px 8px 8px -7px #cccccc55;
+}
+
+.box-alt:hover {
+  cursor: pointer;
+  transition-duration: .5s;
+  transition-delay: 100ms;
+  box-shadow: 10px 10px 20px -5px #cccccc55;
+}
+
+.box-alt > a {
+  text-decoration: none !important;
+}
+
+/*  */
+
+ul > li {
+  list-style: none !important;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.progress {
+  border-radius: 50px !important;
+}
+
+.input-group-text {
+  border-radius: 0 !important;
+}
+
+.footer-menu > a {
+  text-decoration: none;
+  margin: 0rem 1rem;
+}
+
+.text-indigo {
+  color: #5400c9;
+}
+
+.docs > h1, h2, h3, h4 {
+  color: #457bff;
+  margin-top: 3rem;
+}
+
+.no-decor {
+  text-decoration: none !important;
+}
+.no-decor:hover {
+  text-decoration: none !important;
+}
+
+
+.disable-select {
+  user-select: none; /* supported by Chrome and Opera */
+ -webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+ -moz-user-select: none; /* Firefox */
+ -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.modal-content {
+  border-radius: 0 !important;
+  border: 0 !important;
+}
+
+.roller:hover {
+  transition-duration: 3s;
+  transition-delay: .5s;
+  -webkit-transform:rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.roller-alt {
+  transition-duration: 1s;
+  transition-delay: .5s;
+  -webkit-transform:rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.top-menu > .btn {
+  cursor: pointer !important;
+  color: white !important;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+
+.sticky.is-sticky {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.top-menu > .btn {
+  border: none;
+}
+
+.top-menu > .active {
+  box-shadow: inset 5px 5px 8px -4px #cccccc;
+  background: #f7f7f7 !important;
+  color: #007bff !important;
+}
+
+
+.navbar {
+  box-shadow: 5px 5px 8px -4px #cccccc55;
+}
+
+@media only screen and (min-width: 991px) {
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 1.8rem;
+  }
+  
+  .nav-pills .nav-link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0;
+  }
+  .nav-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .nav-pills .nav-link:hover {
+    background: #007bff55 !important;
+  }
+}
+
+
+
+
+/* Media Queries */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  .hide-on-mobile {
+    display: none;
+  }
+}

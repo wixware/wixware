@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href='https://cdn.appzaib.com/public/wixware/img/favico.png' rel='shortcut icon'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+		<link rel='stylesheet' href='https://cdn.appzaib.com/public/stack/bootstrap/v4/bootstrap.min.css'/>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Download Free Software - Wixware</title>
+    <meta name='author' content='Wixware Team' />
+    <meta name="yandex-verification" content="d2961ba495dd90e3" />
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-132064518-3'></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-132064518-3');
+    </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-9650332448563670",
+              enable_page_level_ads: true
+         });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src='https://cdn.appzaib.com/public/rj/js/jquery.min.js'></script>
+    <script src='https://cdn.appzaib.com/public/rj/js/bootstrap.bundle.min.js'></script>
+    <link rel='stylesheet' href='fonts/face.css' />
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function () {
+        // Custom function which toggles between sticky class (is-sticky)
+        var stickyToggle = function (sticky, stickyWrapper, scrollElement) {
+            var stickyHeight = sticky.outerHeight();
+            var stickyTop = stickyWrapper.offset().top;
+            if (scrollElement.scrollTop() >= stickyTop) {
+                stickyWrapper.height(stickyHeight);
+                sticky.addClass("is-sticky");
+            }
+            else {
+                sticky.removeClass("is-sticky");
+                stickyWrapper.height('auto');
+            }
+        };
+        // Find all data-toggle="sticky-onscroll" elements
+        $('[data-toggle="sticky-onscroll"]').each(function () {
+            var sticky = $(this);
+            var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+            sticky.before(stickyWrapper);
+            sticky.addClass('sticky');
+            // Scroll & resize events
+            $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function () {
+                stickyToggle(sticky, stickyWrapper, $(this));
+            });
+            // On page load
+            stickyToggle(sticky, stickyWrapper, $(window));
+        });
+      });
+    </script>
+    <script>
+    	$(".dropdown-toggle").on("mouseenter", function () {
+          // make sure it is not shown:
+          if (!$(this).parent().hasClass("show")) {
+              $(this).click();
+          }
+      });
+    </script>
+  </body>
+</html>
