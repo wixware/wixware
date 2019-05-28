@@ -1,6 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+import Filters from '../Filters';
+
 import ItemCamtasia from '../Items/Camtasia';
 import Item7Zip from '../Items/7Zip';
 import ItemCCleaner from '../Items/CCleaner';
