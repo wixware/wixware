@@ -6,7 +6,7 @@ import ItemVSCode from '../../Components/Items/VSCode';
 
 function CategoryForDevelopers() {
   return (
-    <div className='container-fluid pl-5 pr-5'>
+    <div className='container-fluid pl-5 pr-5 mt-5'>
       <Helmet>
         <title>For Developers - Wixware</title>
         <meta name='description' content="We've a handful of best developer software and tools categorized just for you. Select any and download for free." />
