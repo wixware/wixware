@@ -50,8 +50,8 @@ function Home() {
   return (
     <div className='App'>
       <Router>
-        <Header/>
         <ScrollToTop />
+        <Header/>
         <Jumbotron />
         {/* <TopMenu /> */}
         <Route path='/' exact component={Section} />

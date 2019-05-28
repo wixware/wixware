@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Header() {
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mr-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
       <a class="navbar-brand" href="/"><img src="https://cdn.appzaib.com/public/wixware/img/logo-185x50.png" height='30px' alt="Wixware Logo"/></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
         aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
