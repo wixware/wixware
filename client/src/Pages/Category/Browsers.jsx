@@ -7,7 +7,7 @@ import ItemFirefox from '../../Components/Items/Firefox';
 
 function CategoryBrowsers() {
   return (
-    <div className='container-fluid pl-5 pr-5'>
+    <div className='container-fluid pl-5 pr-5 mt-5'>
       <Helmet>
         <title>Internet Browsers - Wixware</title>
         <meta name='description' content="We've a handful of best internet browsers categorized just for you. Select any and start downloading for free." />
