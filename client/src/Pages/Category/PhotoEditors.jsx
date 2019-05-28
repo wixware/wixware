@@ -6,7 +6,7 @@ import ItemInkscape from '../../Components/Items/InkScape';
 
 function CategoryPhotoEditors() {
   return (
-    <div className='container-fluid pl-5 pr-5'>
+    <div className='container-fluid pl-5 pr-5 mt-5'>
       <Helmet>
         <title>Photo Editors - Wixware</title>
         <meta name='description' content="We've a handful of best photo editors categorized just for you. Select any editor and download for free." />
