@@ -8,7 +8,7 @@ import ItemOBS from '../../Components/Items/ItemOBS';
 
 function CategoryVideoEditors() {
   return (
-    <div className='container-fluid pl-5 pr-5'>
+    <div className='container-fluid pl-5 pr-5 mt-5'>
       <Helmet>
         <title>Video Editors - Wixware</title>
         <meta name='description' content="We've a handful of best video editors categorized just for you. Select any editor and download for free." />
