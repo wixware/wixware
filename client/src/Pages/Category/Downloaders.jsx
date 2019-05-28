@@ -14,7 +14,6 @@ function CategoryDownloaders() {
         <meta name='keywords' content='downloader, free downloader, best downloader free download' />
         <meta name='author' content='Wixware Team' />
       </Helmet>
-      <SearchBar/>
       <div className='row'>
         <div className='col-10'>
           <h1 className='text-primary'> <i className='fas fa-cloud-download-alt'></i> Download Managers</h1>
