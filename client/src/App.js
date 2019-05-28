@@ -52,7 +52,7 @@ function Home() {
       <Router>
         <ScrollToTop />
         <Jumbotron />
-        <Header/>
+        {/* <Header/> */}
         {/* <TopMenu /> */}
         <SearchBar/>
         <Filters/>
