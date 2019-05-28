@@ -8,7 +8,7 @@ import ItemCCleaner from '../Items/CCleaner';
 import ItemVSCode from '../Items/VSCode';
 import ItemFirefox from '../Items/Firefox';
 
-function KLiteCodecPack() {
+class KLiteCodecPack extends Component {
 
   constructor(props) {
     super(props);
