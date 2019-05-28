@@ -8,26 +8,26 @@ const functions = require('firebase-functions');
 // });
 
 
-const express = require('express');
-const app = express();
+let express = require('express');
+let app = express();
 
 // To handle HTTP Get request
-app.get('/', () => (req, res) {
+app.get('/', function (req, res) {
   console.log('GET REQUEST:');
   res.send('Get Request');
 })
 
-app.put('/', () => (req, res) {
+app.put('/', function (req, res) {
   console.log("HTTP Put Request");
   res.send("HTTP PUT Request");
 });
 
-app.post('/', () => (req, res) {
+app.post('/', function (req, res) {
   console.log("HTTP POST Request");
   res.send("HTTP POST Request");  
 });
 
-app.delete('/', () => (req, res) {
+app.delete('/', function (req, res) {
   console.log("HTTP DELETE Request");
   res.send("HTTP DELETE Request");
 });
