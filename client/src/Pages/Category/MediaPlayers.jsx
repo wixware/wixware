@@ -2,7 +2,6 @@ import React from 'react';
 
 import Helmet from 'react-helmet';
 
-import SearchBar from '../../Components/SearchBar';
 import ItemVLC from '../../Components/Items/VLC';
 import ItemKLiteCodecPack from '../../Components/Items/KLiteCodecPack';
 import ItemKMPlayer from '../../Components/Items/KMPlayer';
