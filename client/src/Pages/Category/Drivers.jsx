@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 
 function CategoryDrivers() {
   return (
-    <div className='container text-center'>
+    <div className='container-fluid ml-5 mr-5 mt-5 text-center'>
       <Helmet>
         <title>Drivers - Wixware</title>
         <meta name='description' content="We've a handful of best drivers categorized just for you. Select any and start downloading for free." />
