@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import SearchBar from '../SearchBar';
 import Item7Zip from '../Items/7Zip';
 import ItemCCleaner from '../Items/CCleaner';
 import ItemCamtasia from '../Items/Camtasia';
@@ -35,7 +34,6 @@ function IDM() {
         <meta name='description' content="Download IDM (Internet Download Manager) and/or more software from wixware.com" />
         <meta name='keywords' content='idm, download idm, free idm, latest idm, downloader, download manager' />
       </Helmet>
-      <SearchBar/>
       <div className='container-fluid mt-5 pl-5 pr-5'>
         <div className='row'>
           <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 box pl-5 pr-5 pt-5 pb-5'>
