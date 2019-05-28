@@ -1,0 +1,19 @@
+{
+  "name": "wixware-api-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jahanzaibv2/wixware-api-engine.git"
+  },
+  "author": "Rana Jahanzaib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jahanzaibv2/wixware-api-engine/issues"
+  },
+  "homepage": "https://github.com/Jahanzaibv2/wixware-api-engine#readme"
+}
