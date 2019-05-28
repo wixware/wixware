@@ -5,11 +5,11 @@ function Filters() {
   return (
     <div className='container-fluid hide-on-mobile'>
       <div className='row'>
-        <div className='col-12 ml-5 mr-5'>
+        <div className='col-12 ml-5'>
           <h4 className='text-dark'>Filter by Collections / Categories</h4>
         </div>
       </div>
-      <div className='row text-center mt-4 pl-5 pr-5 filters'>
+      <div className='row text-center ml-5 mt-4 filters'>
         <Link to='/' className='col-xl-2 col-lg-3 col-md-4 col-xs-12 mr-4 ml-4 pt-2 pb-2 box-alt mb-4'>
             All
         </Link>
