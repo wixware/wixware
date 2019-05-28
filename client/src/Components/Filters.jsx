@@ -20,31 +20,8 @@ function Filters() {
             <span>MediaPlayers</span>
           </Link>
         </div>
-        <div className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt'>
-          <Link to='/category/antivirus'>
-            <span>Antivirus</span>
-          </Link>
-        </div>
-        <Link to='/category/internet-browsers' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 pr-2 pl-2'>
-          <Link>Browsers</Link>
-        </Link>
-        <Link to='/category/video-editors' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 pr-2 pl-2'>
-          <Link>VideoEditors</Link>
-        </Link>
-        <Link to='/category/file-compressors' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 pr-2 pl-2'>
-          <Link>Compressors</Link>
-        </Link>
-        <Link to='/category/downloaders' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 pr-2 pl-2'>
-          <Link>Downloaders</Link>
-        </Link>
-        <Link to='/category/photo-editors' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 pr-2 pl-2'>
-          <Link>PhotoEditors</Link>
-        </Link>
-        <Link to='/category/for-developers' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 pr-2 pl-2'>
-          <Link>Developers</Link>
-        </Link>
-        <Link to='/category/drivers' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 pr-2 pl-2'>
-          <Link>Drivers</Link>
+        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt'>
+            Antivirus
         </Link>
       </div>
     </div>
