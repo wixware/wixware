@@ -3,36 +3,39 @@ import { Link } from 'react-router-dom';
 
 function Filters() {
   return (
-    <div className='container-fluid ml-auto mr-auto'>
-      <div className='row'>
-        <Link to='/category/media-players' className='btn btn-light col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-12'>
-          <span>Media Players</span>
+    <div className='container-fluid'>
+      <div className='row ml-auto mr-auto'>
+        <a className='btn btn-sm col-2 align-self-center'>
+          <span>Filter by Collections</span>
+        </a>
+        <a href='/' className='btn btn-light btn-sm col-xl-1 col-lg-2 col-md-4 col-sm-4 col-xs-12'>
+          <span>All</span>
+        </a>
+        <Link to='/category/media-players' className='btn btn-light btn-sm col-xl-1 col-lg-2 col-md-4 col-sm-4 col-xs-12'>
+          <span>MediaPlayers</span>
         </Link>
-        <Link to='/category/antivirus' className='btn btn-light col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-12'>
+        <Link to='/category/antivirus' className='btn btn-light btn-sm col-xl-1 col-lg-2 col-md-4 col-sm-4 col-xs-12'>
           <span>Antivirus</span>
         </Link>
-        <Link to='/category/internet-browsers' className='btn btn-light col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-12'>
+        <Link to='/category/internet-browsers' className='btn btn-light btn-sm col-xl-1 col-lg-2 col-md-4 col-sm-4 col-xs-12'>
           <span>Browsers</span>
         </Link>
-        <Link to='/category/video-editors' className='btn btn-light col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-12'>
-          <span>Video Editors</span>
+        <Link to='/category/video-editors' className='btn btn-light btn-sm col-xl-1 col-lg-2 col-md-4 col-sm-4 col-xs-12'>
+          <span>VideoEditors</span>
         </Link>
-        <Link to='/category/file-compressors' className='btn btn-light col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-12'>
-          <span>File Compressors</span>
+        <Link to='/category/file-compressors' className='btn btn-light btn-sm col-xl-1 col-lg-2 col-md-4 col-sm-4 col-xs-12'>
+          <span>Compressors</span>
         </Link>
-        <Link to='/category/downloaders' className='btn btn-light col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-12'>
+        <Link to='/category/downloaders' className='btn btn-light btn-sm col-xl-1 col-lg-2 col-md-4 col-sm-4 col-xs-12'>
           <span>Downloaders</span>
         </Link>
-        <Link to='/category/photo-editors' className='btn btn-light col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-12'>
-          <span>Photo Editors</span>
+        <Link to='/category/photo-editors' className='btn btn-light btn-sm col-xl-1 col-lg-2 col-md-4 col-sm-4 col-xs-12'>
+          <span>PhotoEditors</span>
         </Link>
-        <Link to='/category/for-developers' className='btn btn-light col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-12'>
-          <span>For Developers</span>
+        <Link to='/category/for-developers' className='btn btn-light btn-sm col-xl-1 col-lg-2 col-md-4 col-sm-4 col-xs-12'>
+          <span>Developers</span>
         </Link>
-        <Link to='/category/cd-dvd' className='btn btn-light col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-12'>
-          <span>CD &amp; DVD</span>
-        </Link>
-        <Link to='/category/drivers' className='btn btn-light col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-12'>
+        <Link to='/category/drivers' className='btn btn-light btn-sm col-xl-1 col-lg-2 col-md-4 col-sm-4 col-xs-12'>
           <span>Drivers</span>
         </Link>
       </div>
