@@ -4,13 +4,11 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer>
-      <div className='container'>
-        <div className='row box mb-4 mt-5 pt-3 pb-3'>
-          <div className='col-2'>
-            <Link to='/' className='no-decor'><img src="https://cdn.appzaib.com/public/wixware/img/logo-185x50.png" height='30' alt="Wixware LOGO" className='pointer' /></Link>
-          </div>
-          <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pt-2'>
+      <div className='container-fluid'>
+        <div className='row mb-4 mt-5 pt-3 pb-3 ml-5 mr-5'>
+          <div className='col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12 pt-2'>
             <div className='footer-menu small'>
+              <span className='badge pointer' data-toggle='tooltip' title="You're browsing Wixware Beta">Early Access</span>
               <Link to="/about" className='text-muted'>About</Link>
               <a href="https://news.wixware.com?utm_source=wixware" className='text-muted'>News</a>
               <Link to="/contact" className='text-muted'>Contact</Link>
@@ -19,7 +17,7 @@ function Footer() {
               <Link to="/disclaimer" className='text-muted'>Disclaimer</Link>
             </div>
           </div>
-          <div className='col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-right pt-1'>
+          <div className='col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12 text-right pt-1'>
             <span className='small text-muted'>Copyright &copy; 2019 Wixware &amp; AN7</span>
           </div>
         </div>
