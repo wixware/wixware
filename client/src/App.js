@@ -51,8 +51,8 @@ function Home() {
     <div className='App'>
       <Router>
         <ScrollToTop />
+        <Header/>
         <Jumbotron />
-        {/* <Header/> */}
         {/* <TopMenu /> */}
         <SearchBar/>
         <Filters/>

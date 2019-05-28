@@ -197,10 +197,6 @@ footer {
 }
 
 
-.navbar {
-  box-shadow: 5px 5px 8px -4px #cccccc55;
-}
-
 
 
 .searchbar {
@@ -220,30 +216,6 @@ footer {
   color: inherit;
   text-decoration: none;
 }
-
-
-
-@media only screen and (min-width: 991px) {
-  .navbar {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 1.8rem;
-  }
-  
-  .nav-pills .nav-link {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 0;
-  }
-  .nav-item {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  .nav-pills .nav-link:hover {
-    background: #007bff55 !important;
-  }
-}
-
 
 
 
@@ -314,5 +286,27 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
   .hide-on-mobile {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    max-height: 6vh !important;
+    line-height: 4.5vh !important;
+  }
+  .nav-item > {
+    margin-bottom: 0rem !important;
+    margin-top: 0rem !important;
+  }
+  .nav-item:hover {
+    transition-duration: .4s;
+    transition-delay: .1s;
+    background: #007bff;
+    color: #fff !important;
+  }
+  .nav-link:hover {
+    transition-duration: .3s;
+    transition-delay: .1s;
+    color: #fff !important;
   }
 }
