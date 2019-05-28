@@ -14,7 +14,6 @@ function CategoryPhotoEditors() {
         <meta name='keywords' content='photo editors, free photo editors, best photo editors free download' />
         <meta name='author' content='Wixware Team' />
       </Helmet>
-      <SearchBar/>
       <div className='row'>
         <div className='col-10'>
           <h1 className='text-primary'> <i className='fas fa-images'></i> Photo Editors</h1>
