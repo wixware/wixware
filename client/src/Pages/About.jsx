@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 function About () {
   return (
-    <div>
+    <div className='mt-5'>
       <Helmet>
         <title>About - Wixware</title>
         <meta name='description' content="Learn more about our mission at wixware.com" />

@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 
 
 import SearchBar from './SearchBar';
+import Filters from './Filters';
 
 import ItemVLC from './Items/VLC';
 import ItemCamtasia from './Items/Camtasia';
@@ -26,6 +27,9 @@ function Section() {
 
   return (
     <div>
+
+        <SearchBar/>
+        <Filters/>
       <Helmet>
         <title>Home - Download Free Software from Wixware</title>
         <meta name='description' content="We're building world's fastest web to serve you hundereds of software at no cost. Try Wixware - It's Free forever." />

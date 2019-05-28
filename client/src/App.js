@@ -54,8 +54,6 @@ function Home() {
         <Header/>
         <Jumbotron />
         {/* <TopMenu /> */}
-        <SearchBar/>
-        <Filters/>
         <Route path='/' exact component={Section} />
         <Route path='/category/downloaders' component={CategoryDownloaders} />
         <Route path='/category/antivirus' component={CategoryAntivirus} />

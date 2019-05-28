@@ -304,6 +304,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
     background: #007bff;
     color: #fff !important;
   }
+  .nav-item-active > a {
+    transition-duration: .4s;
+    transition-delay: .1s;
+    background: #007bff;
+    color: #fff !important;
+  }
   .nav-link:hover {
     transition-duration: .3s;
     transition-delay: .1s;
