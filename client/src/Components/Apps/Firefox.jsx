@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import SearchBar from '../SearchBar';
 import ItemVLC from '../Items/VLC';
 import ItemIDM from '../Items/ItemIDM';
 import Item7Zip from '../Items/7Zip';
