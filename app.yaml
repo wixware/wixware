@@ -1,0 +1,6 @@
+# Copyright 2019, Wixware.
+# 
+
+# [START gae_quickstart_yaml]
+runtime: nodejs10
+# [END gae_quickstart_yaml]
