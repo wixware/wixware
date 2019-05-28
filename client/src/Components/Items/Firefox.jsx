@@ -8,7 +8,7 @@ function ItemFirefox() {
         <div className='col-12'>
           <img src="https://cdn.appzaib.com/public/wixware/img/firefox.png" className='img-fluid pt-3 pl-4 pr-4' alt="Download Mozilla Firefox" />
         </div>
-        <div className='col-12 text-muted small mb-1 mt-2'>
+        <div className='col-12 text-muted small mb-1 mt-2 text-center'>
           <strong className='bold'>Mozilla Firefox</strong>
         </div>
         <div className='col-12 bg-primary text-white pt-1 pb-1'>
