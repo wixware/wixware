@@ -44,6 +44,7 @@ import CategoryFileCompressors from './Pages/Category/FileCompressors';
 import CategoryDrivers from './Pages/Category/Drivers';
 import OBS from './Components/Apps/OBS';
 import SearchBar from './Components/SearchBar';
+import Filters from './Components/Filters';
 
 function Home() {
   return (
@@ -54,6 +55,7 @@ function Home() {
         <Header/>
         {/* <TopMenu /> */}
         <SearchBar/>
+        <Filters/>
         <Route path='/' exact component={Section} />
         <Route path='/category/downloaders' component={CategoryDownloaders} />
         <Route path='/category/antivirus' component={CategoryAntivirus} />
