@@ -6,7 +6,7 @@ import ItemIDM from '../../Components/Items/ItemIDM';
 
 function CategoryDownloaders() {
   return (
-    <div className='container-fluid pl-5 pr-5'>
+    <div className='container-fluid pl-5 pr-5 mt-5'>
       <Helmet>
         <title>Downloaders - Wixware</title>
         <meta name='description' content="We've a handful of best downloaders categorized just for you. Select any and start downloading for free." />
