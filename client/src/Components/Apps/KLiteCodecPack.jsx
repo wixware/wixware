@@ -10,6 +10,20 @@ import ItemFirefox from '../Items/Firefox';
 
 function KLiteCodecPack() {
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      data: null,
+    };
+  }
+
+  componentDidMount() {
+    fetch('/api/v1/apps/klite')
+    .then(response = response.json())
+    .then(data => this.setState({ data }));
+  }
+
   function downloadWindows64App () {
     window.open('https://cdn.appzaib.com/media/wixware/apps/klite/14.9.5-398472659669736978557297328676564846275552/wixware.com-klite-14.9.5-x64.exe');
   }
