@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Jahanzaibv2/wixware-api-engine/issues"
   },
-  "homepage": "https://github.com/Jahanzaibv2/wixware-api-engine#readme"
+  "homepage": "https://github.com/Jahanzaibv2/wixware-api-engine#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
