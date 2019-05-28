@@ -43,7 +43,6 @@ function VLCMediaPlayer() {
         <meta name='description' content="Download VLC Media Player and/or more software from wixware.com" />
         <meta name='keywords' content='vlc, media player, free software, download free software, high speed software server' />
       </Helmet>
-      <SearchBar/>
       <div className='container-fluid mt-5 pl-5 pr-5'>
         <div className='row'>
           <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 box pl-5 pr-5 pt-5 pb-5'>
