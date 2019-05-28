@@ -8,7 +8,7 @@ function ItemWinRAR() {
         <div className='col-12'>
           <img src="https://cdn.appzaib.com/public/wixware/img/winrar.png" className='img-fluid pt-4 pl-4 pr-4' alt="Download WinRAR" />
         </div>
-        <div className='col-12 text-muted small mb-1 mt-2'>
+        <div className='col-12 text-muted small mb-1 mt-2 text-center'>
           <strong className='bold'>WinRAR</strong>
         </div>
         <div className='col-12 bg-primary text-white pt-1 pb-1'>
