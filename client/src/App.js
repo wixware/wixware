@@ -43,6 +43,7 @@ import CategoryCDDVD from './Pages/Category/CDDVD';
 import CategoryFileCompressors from './Pages/Category/FileCompressors';
 import CategoryDrivers from './Pages/Category/Drivers';
 import OBS from './Components/Apps/OBS';
+import SearchBar from './Components/SearchBar';
 
 function Home() {
   return (
@@ -52,6 +53,7 @@ function Home() {
         <Jumbotron />
         <Header/>
         {/* <TopMenu /> */}
+        <SearchBar/>
         <Route path='/' exact component={Section} />
         <Route path='/category/downloaders' component={CategoryDownloaders} />
         <Route path='/category/antivirus' component={CategoryAntivirus} />
