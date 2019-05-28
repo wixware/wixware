@@ -2,7 +2,6 @@ import React from 'react';
 
 import Helmet from 'react-helmet';
 
-import SearchBar from '../../Components/SearchBar';
 import ItemInkscape from '../../Components/Items/InkScape';
 
 function CategoryPhotoEditors() {
