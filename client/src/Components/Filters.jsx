@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 function Filters() {
   return (
-    <div className='container-fluid hide-on-mobile'>
-      <div className='row'>
-        <div className='col-12 ml-5'>
+    <div className='container-fluid ml-auto mr-auto hide-on-mobile'>
+      <div className='row ml-5'>
+        <div className='col-12'>
           <h4 className='text-dark'>Filter by Collections / Categories</h4>
         </div>
       </div>

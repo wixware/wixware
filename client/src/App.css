@@ -203,6 +203,16 @@ footer {
 
 
 
+.searchbar {
+  font-size: 1.4rem;
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+  padding-left: 20px !important;
+  border: 0px !important;
+  box-shadow: 5px 5px 8px -4px #00000022;
+}
+
+
 
 
 
