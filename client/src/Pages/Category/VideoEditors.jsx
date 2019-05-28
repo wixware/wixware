@@ -2,7 +2,6 @@ import React from 'react';
 
 import Helmet from 'react-helmet';
 
-import SearchBar from '../../Components/SearchBar';
 import ItemCamtasia from '../../Components/Items/Camtasia';
 import ItemBlender from '../../Components/Items/Blender';
 import ItemOBS from '../../Components/Items/ItemOBS';
