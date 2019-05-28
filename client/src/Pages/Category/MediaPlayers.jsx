@@ -17,7 +17,6 @@ function CategoryMediaPlayers() {
         <meta name='keywords' content='audio player, media player, free media player, best media player free download' />
         <meta name='author' content='Wixware Team' />
       </Helmet>
-      <SearchBar/>
       <div className='row'>
         <div className='col-10'>
           <h1 className='text-primary'> <i className='fas fa-play'></i> Media Players</h1>
