@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Jahanzaibv2/wixware-api-engine#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^2.3.1"
   }
 }
