@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 function Disclaimer () {
   return (
-    <div>
+    <div className='mt-5'>
       <Helmet>
         <title>Disclaimer - Wixware</title>
         <meta name='description' content="Learn about wixware disclaimer." />
