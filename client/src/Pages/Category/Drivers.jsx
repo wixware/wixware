@@ -2,7 +2,6 @@ import React from 'react';
 
 import Helmet from 'react-helmet';
 
-import SearchBar from '../../Components/SearchBar';
 
 function CategoryDrivers() {
   return (
@@ -13,7 +12,6 @@ function CategoryDrivers() {
         <meta name='keywords' content='drivers, audio drivers, video drivers free download' />
         <meta name='author' content='Wixware Team' />
       </Helmet>
-      <SearchBar/>
       <div className='row'>
         <div className='col-12 align-self-center'>
           <h4>Hi, we're working on a few things. Try again later.</h4>
