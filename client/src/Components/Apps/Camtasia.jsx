@@ -39,6 +39,7 @@ function Camtasia() {
         <meta name='description' content="Download Camtasia Video Editor and/or more software from wixware.com" />
         <meta name='keywords' content='camtasia, camtasia editor, free camtasia, latest camtasia, camtasia video editor' />
       </Helmet>
+      <Filters/>
       <div className='container-fluid mt-5 pl-5 pr-5'>
         <div className='row'>
           <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 box pl-5 pr-5 pt-5 pb-5'>
