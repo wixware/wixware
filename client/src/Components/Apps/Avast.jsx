@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import SearchBar from '../SearchBar';
 import ItemVLC from '../Items/VLC';
 import Item7Zip from '../Items/7Zip';
 import ItemAudacity from '../Items/Audacity';
@@ -35,7 +34,6 @@ function Avast() {
         <meta name='description' content="Download Avast Antivirus and/or more software from wixware.com" />
         <meta name='keywords' content='avast, avast antivirus, download avast, free download avast antivirus, antivirus software' />
       </Helmet>
-      <SearchBar/>
       <div className='container-fluid mt-5 pl-5 pr-5'>
         <div className='row'>
           <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 box pl-5 pr-5 pt-5 pb-5 mr-auto'>
