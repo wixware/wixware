@@ -9,50 +9,38 @@ function Filters() {
           <h4 className='text-dark'>Filter by Collections / Categories</h4>
         </div>
       </div>
-      <div className='row text-center mt-4 pl-4 pr-4 filters'>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
+      <div className='row mt-4 pl-4 pr-4 filters'>
+        <Link to='/' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
+            All
+        </Link>
+        <Link to='/category/media-players' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
+            Media Players
         </Link>
         <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
             Antivirus
         </Link>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
+        <Link to='/category/internet-browsers' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
+            Browsers
         </Link>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
+        <Link to='/category/video-editors' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
+            Video Editors
         </Link>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
+        <Link to='/category/file-compressors' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
+            Compressors
         </Link>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
-        </Link>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
+        <Link to='/category/downloaders' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
+            Downloaders
         </Link>
       </div>
-      <div className='row text-center mt-2 pr-4 pl-4 filters'>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
+      <div className='row mt-2 pr-4 pl-4 filters'>
+        <Link to='/category/photo-editors' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
+            Photo Editors
         </Link>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
+        <Link to='/category/cd-dvd' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
+            CD/DVD
         </Link>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
-        </Link>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
-        </Link>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
-        </Link>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
-        </Link>
-        <Link to='/category/antivirus' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
-            Antivirus
+        <Link to='/category/drivers' className='col-xl-1 col-lg-2 col-md-4 col-4 col-xs-12 mr-5 ml-5 pt-2 pb-2 box-alt mb-4'>
+            Drivers
         </Link>
       </div>
     </div>
