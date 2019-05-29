@@ -34,8 +34,8 @@ function Filters() {
         <Link to='/category/photo-editors' className='col-xl-2 col-lg-3 col-md-4 col-xs-12 mr-4 ml-4 pt-2 pb-2 box-alt-2 mb-4'>
             Photo Editors
         </Link>
-        <Link to='/category/cd-dvd' className='col-xl-2 col-lg-3 col-md-4 col-xs-12 mr-4 ml-4 pt-2 pb-2 box-alt-2 mb-4'>
-            CD/DVD
+        <Link to='/category/for-developers' className='col-xl-2 col-lg-3 col-md-4 col-xs-12 mr-4 ml-4 pt-2 pb-2 box-alt-2 mb-4'>
+            Developers
         </Link>
         <Link to='/category/drivers' className='col-xl-2 col-lg-3 col-md-4 col-xs-12 mr-4 ml-4 pt-2 pb-2 box-alt-2 mb-4'>
             Drivers
