@@ -2,6 +2,8 @@ import React from 'react';
 
 import Helmet from 'react-helmet';
 
+import Filters from '../../Components/Filters';
+
 import ItemVSCode from '../../Components/Items/VSCode';
 
 function CategoryForDevelopers() {
