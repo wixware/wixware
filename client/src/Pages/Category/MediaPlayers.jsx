@@ -2,6 +2,8 @@ import React from 'react';
 
 import Helmet from 'react-helmet';
 
+import Filters from '../../Components/Filters';
+
 import ItemVLC from '../../Components/Items/VLC';
 import ItemKLiteCodecPack from '../../Components/Items/KLiteCodecPack';
 import ItemKMPlayer from '../../Components/Items/KMPlayer';
