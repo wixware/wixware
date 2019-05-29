@@ -15,7 +15,8 @@ function CategoryForDevelopers() {
         <meta name='keywords' content='developer software, free developer software, best developer software free download' />
         <meta name='author' content='Wixware Team' />
       </Helmet>
-      <div className='row'>
+      <Filters/>
+      <div className='row mt-5 pl-5 pr-5'>
         <div className='col-10'>
           <h1 className='text-primary'> <i className='fas fa-laptop-code'></i> For Developers</h1>
         </div>
