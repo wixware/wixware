@@ -16,7 +16,8 @@ function CategoryBrowsers() {
         <meta name='keywords' content='browser, internet browser, best internet browser free download' />
         <meta name='author' content='Wixware Team' />
       </Helmet>
-      <div className='row'>
+      <Filters/>
+      <div className='row mt-5 pl-5 pr-5'>
         <div className='col-10'>
           <h1 className='text-primary'> <i className='fas fa-globe-asia'></i> Internet Browsers</h1>
         </div>
