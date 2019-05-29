@@ -2,6 +2,8 @@ import React from 'react';
 
 import Helmet from 'react-helmet';
 
+import Filters from '../../Components/Filters';
+
 import ItemIDM from '../../Components/Items/ItemIDM';
 
 function CategoryDownloaders() {
