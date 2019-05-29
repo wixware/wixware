@@ -2,6 +2,8 @@ import React from 'react';
 
 import Helmet from 'react-helmet';
 
+import Filters from '../../Components/Filters';
+
 import ItemChrome from '../../Components/Items/Chrome';
 import ItemFirefox from '../../Components/Items/Firefox';
 
