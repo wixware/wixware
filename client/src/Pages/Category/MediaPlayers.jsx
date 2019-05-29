@@ -19,7 +19,7 @@ function CategoryMediaPlayers() {
         <meta name='author' content='Wixware Team' />
       </Helmet>
       <Filters/>
-      <div className='row pl-5 pr-5'>
+      <div className='row mt-5 pl-5 pr-5'>
         <div className='col-10'>
           <h1 className='text-primary'> <i className='fas fa-play'></i> Media Players</h1>
         </div>
