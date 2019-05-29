@@ -1,7 +1,13 @@
 const express = require('express');
+const forceDomain = require('forcedomain');
 const path = require('path');
 
 const app = express();
+
+app.use(forceDomain({
+  hostname: 'www.wixware.com',
+  protocol: 'https'
+}));
 
 // Serve the static files from React App
 app.use(express.static(path.join(__dirname, 'client/build')));

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Jahanzaibv2/wixware-api-engine#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "forcedomain": "^1.0.1"
   }
 }
