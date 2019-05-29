@@ -2,6 +2,8 @@ import React from 'react';
 
 import Helmet from 'react-helmet';
 
+import Filters from '../../Components/Filters';
+
 import ItemAvast from '../../Components/Items/Avast';
 import ItemCCleaner from '../../Components/Items/CCleaner';
 
