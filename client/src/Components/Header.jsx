@@ -15,7 +15,7 @@ function Header() {
       <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
         <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-            <a class="nav-link" to="/">
+            <a class="nav-link" href="/">
               Home
             </a>
           </li>
