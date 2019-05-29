@@ -17,7 +17,8 @@ function CategoryVideoEditors() {
         <meta name='keywords' content='video editors, free video editors, best video editors free download' />
         <meta name='author' content='Wixware Team' />
       </Helmet>
-      <div className='row'>
+      <Filters/>
+      <div className='row pl-5 pr-5 mt-5'>
         <div className='col-10'>
           <h1 className='text-primary'> <i className='fas fa-video'></i> Video Editors</h1>
         </div>
