@@ -144,26 +144,6 @@ ul > li {
   border: 0 !important;
 }
 
-.roller:hover {
-  transition-duration: 3s;
-  transition-delay: .5s;
-  -webkit-transform:rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
-.roller-alt {
-  transition-duration: 1s;
-  transition-delay: .5s;
-  -webkit-transform:rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
 .top-menu > .btn {
   cursor: pointer !important;
   color: white !important;
@@ -198,7 +178,8 @@ footer {
 
 
 .navbar {
-  
+  border-bottom: 1px solid #cccccc55;
+  box-shadow: 0px 0px 5px 1px #00000010 !important;
 }
 
 
