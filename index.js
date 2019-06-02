@@ -23,8 +23,6 @@ admin.initializeApp({
 // Initializing Firestore
 const db = admin.firestore();
 
-let docRef = db.collection('users').doc('ranajahanzaib');
-
 // This is how you write data into Firestore
 // let setRJ = docRef.set({
 //   first_name: 'Rana',
@@ -34,18 +32,46 @@ let docRef = db.collection('users').doc('ranajahanzaib');
 
 
 // This is how you GET data from Firestore
-let appRef = db.collection('apps').doc('zero');
-let getDoc = appRef.get()
+let citiesRef = db.collection('cities');
+
+let setSf = citiesRef.doc('SF').set({
+  name: 'San Francisco', state: 'CA', country: 'USA',
+  capital: false, population: 860000
+});
+let setLa = citiesRef.doc('LA').set({
+  name: 'Los Angeles', state: 'CA', country: 'USA',
+  capital: false, population: 3900000
+});
+let setDc = citiesRef.doc('DC').set({
+  name: 'Washington, D.C.', state: null, country: 'USA',
+  capital: true, population: 680000
+});
+let setTok = citiesRef.doc('TOK').set({
+  name: 'Tokyo', state: null, country: 'Japan',
+  capital: true, population: 9000000
+});
+let setBj = citiesRef.doc('BJ').set({
+  name: 'Beijing', state: null, country: 'China',
+  capital: true, population: 21500000
+});
+
+
+let cityRef = db.collection('cities').doc('SF');
+let getDoc = cityRef.get()
   .then(doc => {
-    if(!doc.exists) {
-      console.log('No such document found');
+    if (!doc.exists) {
+      console.log('No such document!');
     } else {
       console.log('Document data:', doc.data());
+      document.write(doc.data());
     }
   })
   .catch(err => {
     console.log('Error getting document', err);
   });
+
+
+
 
 // An api endpoint that returns a short list of items
 app.get('/api/getList', (req,res) => {
