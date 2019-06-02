@@ -12,6 +12,16 @@ app.use(forceDomain({
 // Serve the static files from React App
 app.use(express.static(path.join(__dirname, 'client/build')));
 
+// Firebase dependencies
+const admin = require('firebase-admin');
+
+// Initializing firebase admin with default project on Google Cloud
+admin.initializeApp({
+  credential: admin.credential.applicationDefault()
+});
+
+const db = admin.firestore();
+
 // An api endpoint that returns a short list of items
 app.get('/api/getList', (req,res) => {
   let list = ["item1", "item2", "item3"];
