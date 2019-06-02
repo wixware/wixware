@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import './Firebase';
-
 import './App.css';
 
 import Section from './Components/Section';
