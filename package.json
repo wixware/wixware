@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Jahanzaibv2/wixware-api-engine#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "firebase-admin": "^8.0.0",
     "forcedomain": "^1.0.1"
   }
 }
