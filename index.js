@@ -32,53 +32,58 @@ const db = admin.firestore();
 // });
 
 
-// This is how you GET data from Firestore
-let citiesRef = db.collection('cities');
+// // This is how you GET data from Firestore
+// let citiesRef = db.collection('cities');
 
-let setSf = citiesRef.doc('SF').set({
-  name: 'San Francisco', state: 'CA', country: 'USA',
-  capital: false, population: 860000
-});
-let setLa = citiesRef.doc('LA').set({
-  name: 'Los Angeles', state: 'CA', country: 'USA',
-  capital: false, population: 3900000
-});
-let setDc = citiesRef.doc('DC').set({
-  name: 'Washington, D.C.', state: null, country: 'USA',
-  capital: true, population: 680000
-});
-let setTok = citiesRef.doc('TOK').set({
-  name: 'Tokyo', state: null, country: 'Japan',
-  capital: true, population: 9000000
-});
-let setBj = citiesRef.doc('BJ').set({
-  name: 'Beijing', state: null, country: 'China',
-  capital: true, population: 21500000
-});
-
-
+// let setSf = citiesRef.doc('SF').set({
+//   name: 'San Francisco', state: 'CA', country: 'USA',
+//   capital: false, population: 860000
+// });
+// let setLa = citiesRef.doc('LA').set({
+//   name: 'Los Angeles', state: 'CA', country: 'USA',
+//   capital: false, population: 3900000
+// });
+// let setDc = citiesRef.doc('DC').set({
+//   name: 'Washington, D.C.', state: null, country: 'USA',
+//   capital: true, population: 680000
+// });
+// let setTok = citiesRef.doc('TOK').set({
+//   name: 'Tokyo', state: null, country: 'Japan',
+//   capital: true, population: 9000000
+// });
+// let setBj = citiesRef.doc('BJ').set({
+//   name: 'Beijing', state: null, country: 'China',
+//   capital: true, population: 21500000
+// });
 
 
 
+  function getData() {
+    return list = db.collection('users').doc('ranajahanzaib').get();
+  }
 
+
+// function getList() {
+
+//   function getCollections(db) {
+//     // [START get_collections]
+//     var sfRef = db.collection('cities').doc('SF');
+//     sfRef.getCollections().then(collections => {
+//       collections.forEach(collection => {
+//         console.log('Found subcollection with id:', collection.id);
+//       });
+//     });
+//     // [END get_collections]
+//   }
+//   res.json(list);
+//   console.log('Sent list of items');
+
+// }
 
 // An api endpoint that returns a short list of items
 app.get('/api/getList', (req,res) => {
-  let cityRef = db.collection('cities').doc('SF');
-  let getDoc = cityRef.get()
-    .then(doc => {
-      if (!doc.exists) {
-        console.log('No such document!');
-      } else {
-        console.log('Document data:', doc.data());
-        let list = doc.data();
-      }
-    })
-    .catch(err => {
-      console.log('Error getting document', err);
-    });
+  getData();
   res.json(list);
-  console.log('Sent list of items');
 });
 
 // Handles any requests that don't match the ones above
