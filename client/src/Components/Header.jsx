@@ -6,26 +6,26 @@ import { Link } from 'react-router-dom';
 function Header() {
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-      <a class="navbar-brand" href="/"><img src="https://cdn.appzaib.com/public/wixware/img/logo-185x50.png" height='30px' alt="Wixware Logo"/></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+    <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <a className="navbar-brand" href="/"><img src="https://cdn.appzaib.com/public/wixware/img/logo-185x50.png" height='30px' alt="Wixware Logo"/></a>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
         aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-        <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="/">
+      <div className="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <ul className="navbar-nav ml-auto">
+        <li className="nav-item active">
+            <a className="nav-link" href="/">
               Home
             </a>
           </li>
-          <li class="nav-item active">
-            <Link class="nav-link" to="/about">
+          <li className="nav-item active">
+            <Link className="nav-link" to="/about">
               About
             </Link>
           </li>
-          <li class="nav-item active">
-            <Link class="nav-link" to="/contact">
+          <li className="nav-item active">
+            <Link className="nav-link" to="/contact">
               Contact
             </Link>
           </li>
