@@ -84,7 +84,7 @@ let getDoc = cityRef.get()
     if (!doc.exists) {
       console.log('No such document!');
     } else {
-      list[doc.id] = doc.data();
+      list = doc.data();
     }
   })
   .catch(err => {
