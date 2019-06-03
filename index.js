@@ -76,6 +76,18 @@ const db = admin.firestore();
 
 // }
 
+// Get all documents in a collection
+// let citiesRef = db.collection('cities');
+// let allCities = citiesRef.get()
+//   .then(snapshot => {
+//     snapshot.forEach(doc => {
+//       console.log(doc.id, '=>', doc.data());
+//     });
+//   })
+//   .catch(err => {
+//     console.log('Error getting documents', err);
+//   });
+
 
 let list = {};
 // This is how you get single document
@@ -94,7 +106,7 @@ let getDoc = cityRef.get()
   
 // An api endpoint that returns a short list of items
 app.get('/api/get/', (req,res) => {
-  res.json(list);
+  res.json(list['link']);
 });
 
 // Handles any requests that don't match the ones above
