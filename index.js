@@ -78,7 +78,7 @@ const db = admin.firestore();
 
 
 let list = {};
-
+// This is how you get single document
 let cityRef = db.collection('apps').doc('zero');
 let getDoc = cityRef.get()
   .then(doc => {
