@@ -89,21 +89,36 @@ const db = admin.firestore();
 //   });
 
 
-let list = {};
 // This is how you get single document
-let cityRef = db.collection('apps').doc('zero');
-let getDoc = cityRef.get()
-  .then(doc => {
-    if (!doc.exists) {
-      console.log('No such document!');
-    } else {
-      list = doc.data();
-    }
+// let cityRef = db.collection('apps').doc('zero');
+// let getDoc = cityRef.get()
+//   .then(doc => {
+//     if (!doc.exists) {
+//       console.log('No such document!');
+//     } else {
+//       list = doc.data();
+//     }
+//   })
+//   .catch(err => {
+//     console.log('Error getting document', err);
+//   });
+
+// API ENDPOINT /get 
+
+let list = {};
+
+let appsRef = db.collection('apps');
+let allApps = appsRef.get()
+  .then(snapshot => {
+    snapshot.forEach(doc => {
+      list = doc.id;
+    });
   })
   .catch(err => {
-    console.log('Error getting document', err);
+    console.log('Erorr getting documents', err);
   });
-  
+
+
 // An api endpoint that returns a short list of items
 app.get('/api/get/', (req,res) => {
   res.json(list['link']);
