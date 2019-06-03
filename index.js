@@ -78,7 +78,7 @@ const db = admin.firestore();
 
 let list = {};
 
-let cityRef = db.collection('cities').doc('SF');
+let cityRef = db.collection('apps').doc('zero');
 let getDoc = cityRef.get()
   .then(doc => {
     if (!doc.exists) {
