@@ -103,16 +103,16 @@ const db = admin.firestore();
 //     console.log('Error getting document', err);
 //   });
 
-// API ENDPOINT /get 
+/***** API ENDPOINT /get/items *****/
 
-let list = {};
+let items = {};
 
-let appsRef = db.collection('users');
+let appsRef = db.collection('apps');
 let allApps = appsRef.get()
   .then(snapshot => {
     let i = 0;
     snapshot.forEach(doc => {
-      list[i] = doc.id;
+      items[i] = doc.id;
       i++;
     });
   })
@@ -120,10 +120,13 @@ let allApps = appsRef.get()
     console.log('Erorr getting documents', err);
   });
 
-// An api endpoint that returns a short list of items
-app.get('/api/get/', (req,res) => {
-  res.json(list);
+// An api endpoint that returns a list of items (apps)
+app.get('/api/v0/get/item', (req,res) => {
+  res.json(items);
 });
+
+
+
 
 // Handles any requests that don't match the ones above
 app.get('*', (req,res) =>{
