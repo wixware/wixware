@@ -10,11 +10,12 @@ function Footer() {
             <div className='footer-menu small'>
               <span className='badge pointer' data-toggle='tooltip' title="You're browsing Wixware Beta">Early Access</span>
               <Link to="/about" className='text-muted'>About</Link>
-              <a href="https://news.wixware.com?utm_source=wixware" className='text-muted'>News</a>
+              <a href="https://news.wixware.com?utm_source=wixware" target='_ublank' className='text-muted'>News</a>
               <Link to="/contact" className='text-muted'>Contact</Link>
               <Link to="/terms" className='text-muted'>Terms</Link>
               <Link to="/privacy" className='text-muted'>Privacy</Link>
               <Link to="/disclaimer" className='text-muted'>Disclaimer</Link>
+              <a href="https://api.wixware.com/?utm_source=wixware" target='_ublank' className='text-muted'>Disclaimer</a>
             </div>
           </div>
           <div className='col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12 text-right pt-1'>
