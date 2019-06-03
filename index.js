@@ -107,21 +107,22 @@ const db = admin.firestore();
 
 let list = {};
 
-let appsRef = db.collection('apps');
+let appsRef = db.collection('users');
 let allApps = appsRef.get()
   .then(snapshot => {
+    let i = 0;
     snapshot.forEach(doc => {
-      list = doc.id;
+      list[i] = doc.id;
+      i++;
     });
   })
   .catch(err => {
     console.log('Erorr getting documents', err);
   });
 
-
 // An api endpoint that returns a short list of items
 app.get('/api/get/', (req,res) => {
-  res.json(list['link']);
+  res.json(list);
 });
 
 // Handles any requests that don't match the ones above
