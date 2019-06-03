@@ -76,6 +76,7 @@ const db = admin.firestore();
 
 // }
 
+
 let list = {};
 
 let cityRef = db.collection('apps').doc('zero');
@@ -90,9 +91,9 @@ let getDoc = cityRef.get()
   .catch(err => {
     console.log('Error getting document', err);
   });
-
+  
 // An api endpoint that returns a short list of items
-app.get('/api/getList', (req,res) => {
+app.get('/api/get/', (req,res) => {
   res.json(list);
 });
 
