@@ -12,7 +12,6 @@ app.use(forceDomain({
 // Serve the static files from React App
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-
 // Firebase dependencies
 const admin = require('firebase-admin');
 
@@ -23,6 +22,7 @@ admin.initializeApp({
 
 // Initializing Firestore
 const db = admin.firestore();
+
 
 // This is how you write data into Firestore
 // let setRJ = docRef.set({
@@ -58,10 +58,6 @@ const db = admin.firestore();
 
 
 
-  function getData() {
-    return list = db.collection('users').doc('ranajahanzaib').get();
-  }
-
 
 // function getList() {
 
@@ -80,9 +76,23 @@ const db = admin.firestore();
 
 // }
 
+let list = {};
+
+let cityRef = db.collection('cities').doc('SF');
+let getDoc = cityRef.get()
+  .then(doc => {
+    if (!doc.exists) {
+      console.log('No such document!');
+    } else {
+      list[doc.id] = doc.data();
+    }
+  })
+  .catch(err => {
+    console.log('Error getting document', err);
+  });
+
 // An api endpoint that returns a short list of items
 app.get('/api/getList', (req,res) => {
-  getData();
   res.json(list);
 });
 
