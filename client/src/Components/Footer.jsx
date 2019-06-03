@@ -15,7 +15,7 @@ function Footer() {
               <Link to="/terms" className='text-muted'>Terms</Link>
               <Link to="/privacy" className='text-muted'>Privacy</Link>
               <Link to="/disclaimer" className='text-muted'>Disclaimer</Link>
-              <a href="https://api.wixware.com/?utm_source=wixware" target='_ublank' className='text-muted'>Disclaimer</a>
+              <a href="https://api.wixware.com/?utm_source=wixware" target='_ublank' className='text-muted'>Learn about APIs</a>
             </div>
           </div>
           <div className='col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12 text-right pt-1'>
