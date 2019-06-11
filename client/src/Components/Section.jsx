@@ -39,6 +39,7 @@ function Section() {
         <div className='row ml-2 text-left'>
           <div className='col-12'>
             <h4 className='text-dark'>Featured</h4>
+            <p>Browse all featured apps</p>
           </div>
         </div>
         <div className='row'>
@@ -51,6 +52,7 @@ function Section() {
         <div className='row ml-2 text-left'>
           <div className='col-12'>
             <h4 className='text-dark'>Trending this week</h4>
+            <p>See trending this week</p>
           </div>
         </div>
         <div className='row'>
@@ -63,6 +65,7 @@ function Section() {
         <div className='row ml-2 text-left'>
           <div className='col-12'>
             <h4 className='text-dark'>Recently added</h4>
+            <p>A few we've added recently</p>
           </div>
         </div>
         <div className='row'>
