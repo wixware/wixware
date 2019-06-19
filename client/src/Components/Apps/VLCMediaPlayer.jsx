@@ -86,7 +86,7 @@ class VLCMediaPlayer extends Component {
         <div className='row'>
           <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 box pl-5 pr-5 pt-5 pb-5'>
           <h1>Download {App.Name}</h1>
-            <h5 className='text-muted'>By <span className='text-primary'><a href={App.DeveloperSite+URLParam} target='_ublank'>{App.Developer}</a></span> <i className='fa fa-check-circle text-primary'></i></h5>
+            <h5 className='text-muted'>By <span className='text-primary'><a href={App.DeveloperSite+URLParam} target='_ublank'>{App.Developer}</a></span></h5>
             <div className='row'>
              <div className='col-4'>
                 <span className='text-muted'><span className='badge badge-success' data-toggle='tooltip' title={App.LicenseType}>{App.License}</span> <a className='small' href={App.LicenseURL} target='_ublank'>Learn more</a></span>
@@ -138,7 +138,7 @@ class VLCMediaPlayer extends Component {
           <div className='col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center ml-auto'>
             <div className='row'>
               <div className='col-12 box'>
-                <img src={App.ImageURL} className='mt-5 img-fluid' alt='Download VLC Media Player' />
+                <img src={App.ImageURL} className='mt-5 img-fluid' alt={App.Name} />
                 <br/>
                 <br/>
                 <span className='text-muted'><i className='fa fa-download'></i> 451 Downloads</span>
