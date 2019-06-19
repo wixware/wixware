@@ -8,6 +8,7 @@ import Item7Zip from '../Items/7Zip';
 import ItemCCleaner from '../Items/CCleaner';
 import ItemIDM from '../Items/ItemIDM';
 import ItemKMPlayer from '../Items/KMPlayer';
+import { stringify } from 'querystring';
 
 function downloadWindows64App () {
   window.open('https://cdn.appzaib.com/media/wixware/apps/vlc/3.0.6-683993258935243227979873999866792448443987/wixware.com-vlc-3.0.6-win64.exe');
@@ -49,10 +50,7 @@ class VLCMediaPlayer extends Component {
 
 
   componentDidMount() {
-    // fetch('https://api.wixware.com/v1/get/app/vlc')
-    //   .then(response => response.json())
-    //   .then(data => this.setState({data}));
-    fetch('https://api.wixware.com/v1/get/app/vlc')
+    fetch('https://api.wixware.com//app/vlc')
       .then((Response) => Response.json())
       .then((findResponse) => {
         this.setState({
@@ -65,6 +63,7 @@ class VLCMediaPlayer extends Component {
           LicenseURL:findResponse.LicenseURL,
           LatestVersion:findResponse.LatestVersion,
           Description:findResponse.Description,
+          ImageURL:findResponse.ImageURL,
         })
       })
   }
@@ -73,35 +72,35 @@ class VLCMediaPlayer extends Component {
 
   render() {
 
-    const wixapp = this.state;
+    const App = this.state;
 
     return (
       <div>
       <Helmet>
-        <title>Download VLC Media Player - Wixware</title>
-        <meta name='description' content="Download VLC Media Player and/or more software from wixware.com" />
+        <title>{'Download '+App.Name+' - Wixware'}</title>
+        <meta name='description' content={'Download '+App.Name+' and/or more software from wixware.com'} />
         <meta name='keywords' content='vlc, media player, free software, download free software, high speed software server' />
       </Helmet>
       <Filters/>
       <div className='container-fluid mt-5 pl-5 pr-5'>
         <div className='row'>
           <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 box pl-5 pr-5 pt-5 pb-5'>
-          <h1>Download {wixapp.Name}</h1>
-            <h5 className='text-muted'>By <span className='text-primary'><a href={wixapp.DeveloperSite+URLParam} target='_ublank'>{wixapp.Developer}</a></span> <i className='fa fa-check-circle text-primary'></i></h5>
+          <h1>Download {App.Name}</h1>
+            <h5 className='text-muted'>By <span className='text-primary'><a href={App.DeveloperSite+URLParam} target='_ublank'>{App.Developer}</a></span> <i className='fa fa-check-circle text-primary'></i></h5>
             <div className='row'>
              <div className='col-4'>
-                <span className='text-muted'><span className='badge badge-success'>Free &amp; Open Source</span> <a className='small' href='https://www.videolan.org/contribute.html?ref_by=wixware.com#money' target='_ublank'>Support</a></span>
+                <span className='text-muted'><span className='badge badge-success' data-toggle='tooltip' title={App.LicenseType}>{App.License}</span> <a className='small' href={App.LicenseURL} target='_ublank'>Learn more</a></span>
               </div>
               <div className='col-4 text-center'>
-                <span className='text-muted'><span className='badge badge-primary'>v3.0.6</span></span>
+                <span className='text-muted'><span className='badge badge-primary'>v{App.LatestVersion}</span></span>
               </div>
               <div className='col-4 text-right'>
                 <span className='text-muted'><span className='badge badge-warning'>File Size 40 MB</span></span>
               </div>
             </div>
             <h4 className='mt-5'>Description</h4>
-            {wixapp.Description}
-            <h3 className='text-primary pt-5'>Now Available for All platforms</h3>
+            {App.Description}
+            <h3 className='text-primary pt-5'>Download for other platforms</h3>
             <div className='download-group mt-5'>
               <div className='btn-group'>
                 <button rel='nofollow' disabled className='input-group-text'><i className='fab fa-windows'></i> &nbsp;&nbsp; Get it for Windows</button>
@@ -139,7 +138,7 @@ class VLCMediaPlayer extends Component {
           <div className='col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center ml-auto'>
             <div className='row'>
               <div className='col-12 box'>
-                <img src='https://cdn.appzaib.com/public/wixware/img/vlc.png' className='mt-5 img-fluid' alt='Download VLC Media Player' />
+                <img src={App.ImageURL} className='mt-5 img-fluid' alt='Download VLC Media Player' />
                 <br/>
                 <br/>
                 <span className='text-muted'><i className='fa fa-download'></i> 451 Downloads</span>
@@ -147,6 +146,7 @@ class VLCMediaPlayer extends Component {
                 <br/>
                 {/* <span className='small'><a href='/archives/vlc'>Looking for older version?</a></span> */}
               </div>
+              <button className='col-12 bg-primary text-white pt-3 pb-3 btn btn-lg' onClick={downloadWindows64App}>Download</button>
               <div className='col-12 box mt-5 pb-5'>
                 <div className='col-12 mt-4 pointer' data-toggle='tooltip' title="Wixware Performance Score">
                 <h6 className='mb-5 text-muted'>Wixware Performance Test</h6>
