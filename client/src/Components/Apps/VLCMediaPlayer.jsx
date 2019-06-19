@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { Helmet } from 'react-helmet';
 
 import Filters from '../Filters';
@@ -9,36 +9,74 @@ import ItemCCleaner from '../Items/CCleaner';
 import ItemIDM from '../Items/ItemIDM';
 import ItemKMPlayer from '../Items/KMPlayer';
 
-function VLCMediaPlayer() {
+function downloadWindows64App () {
+  window.open('https://cdn.appzaib.com/media/wixware/apps/vlc/3.0.6-683993258935243227979873999866792448443987/wixware.com-vlc-3.0.6-win64.exe');
+}
+function downloadWindows32App () {
+  window.open('https://cdn.appzaib.com/media/wixware/apps/vlc/3.0.6-683993258935243227979873999866792448443987/wixware.com-vlc-3.0.6-win32.exe');
+}
+function downloadMac() {
+  window.open('https://cdn.appzaib.com/media/wixware/apps/vlc/3.0.6-683993258935243227979873999866792448443987/wixware.com-vlc-3.0.6.dmg');
+}
+function downloadAndroid32App () {
+  window.open('https://cdn.appzaib.com/media/wixware/apps/vlc/3.1.1-537868753683253246286365626682667379283645/wixware.com-vlc-android-3.1.1-x86.apk');
+}
+function downloadAndroid64App () {
+  window.open('https://cdn.appzaib.com/media/wixware/apps/vlc/3.1.1-537868753683253246286365626682667379283645/wixware.com-vlc-android-3.1.1-x86_64.apk');
+}
 
-  function downloadWindows64App () {
-    window.open('https://cdn.appzaib.com/media/wixware/apps/vlc/3.0.6-683993258935243227979873999866792448443987/wixware.com-vlc-3.0.6-win64.exe');
-  }
-  function downloadWindows32App () {
-    window.open('https://cdn.appzaib.com/media/wixware/apps/vlc/3.0.6-683993258935243227979873999866792448443987/wixware.com-vlc-3.0.6-win32.exe');
-  }
-  function downloadMac() {
-    window.open('https://cdn.appzaib.com/media/wixware/apps/vlc/3.0.6-683993258935243227979873999866792448443987/wixware.com-vlc-3.0.6.dmg');
-  }
-  function downloadAndroid32App () {
-    window.open('https://cdn.appzaib.com/media/wixware/apps/vlc/3.1.1-537868753683253246286365626682667379283645/wixware.com-vlc-android-3.1.1-x86.apk');
-  }
-  function downloadAndroid64App () {
-    window.open('https://cdn.appzaib.com/media/wixware/apps/vlc/3.1.1-537868753683253246286365626682667379283645/wixware.com-vlc-android-3.1.1-x86_64.apk');
+let URLParam = '?ref=wixware';
+
+let progressBarStyles = {
+  height: '5px'
+};
+let progressBarOne = {
+  width: '82%'
+};
+let progressBarTwo = {
+  width: '89%'
+};
+
+class VLCMediaPlayer extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      data: null,
+    };
   }
 
-  let progressBarStyles = {
-    height: '5px'
-  };
-  let progressBarOne = {
-    width: '82%'
-  };
-  let progressBarTwo = {
-    width: '89%'
-  };
 
-  return (
-    <div>
+  componentDidMount() {
+    // fetch('https://api.wixware.com/v1/get/app/vlc')
+    //   .then(response => response.json())
+    //   .then(data => this.setState({data}));
+    fetch('https://api.wixware.com/v1/get/app/vlc')
+      .then((Response) => Response.json())
+      .then((findResponse) => {
+        this.setState({
+          Name:findResponse.Name,
+          Slug:findResponse.Slug,
+          Developer:findResponse.Developer,
+          DeveloperSite:findResponse.DeveloperSite,
+          License:findResponse.License,
+          LicenseType:findResponse.LicenseType,
+          LicenseURL:findResponse.LicenseURL,
+          LatestVersion:findResponse.LatestVersion,
+          Description:findResponse.Description,
+        })
+      })
+  }
+
+  
+
+  render() {
+
+    const wixapp = this.state;
+
+    return (
+      <div>
       <Helmet>
         <title>Download VLC Media Player - Wixware</title>
         <meta name='description' content="Download VLC Media Player and/or more software from wixware.com" />
@@ -48,8 +86,8 @@ function VLCMediaPlayer() {
       <div className='container-fluid mt-5 pl-5 pr-5'>
         <div className='row'>
           <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 box pl-5 pr-5 pt-5 pb-5'>
-            <h1>Download VLC Media Player</h1>
-            <h5 className='text-muted'>By <span className='text-primary'><a href='https://www.videolan.org/?ref_by=wixware.com' target='_ublank'>VideoLAN Organization</a></span> <i className='fa fa-check-circle text-primary'></i></h5>
+          <h1>Download {wixapp.Name}</h1>
+            <h5 className='text-muted'>By <span className='text-primary'><a href={wixapp.DeveloperSite+URLParam} target='_ublank'>{wixapp.Developer}</a></span> <i className='fa fa-check-circle text-primary'></i></h5>
             <div className='row'>
              <div className='col-4'>
                 <span className='text-muted'><span className='badge badge-success'>Free &amp; Open Source</span> <a className='small' href='https://www.videolan.org/contribute.html?ref_by=wixware.com#money' target='_ublank'>Support</a></span>
@@ -62,9 +100,7 @@ function VLCMediaPlayer() {
               </div>
             </div>
             <h4 className='mt-5'>Description</h4>
-            <p className=''>VLC media player (commonly known as VLC) is a free and open-source, portable, cross-platform media player and streaming media server developed by the VideoLAN project. VLC is available for desktop operating systems and mobile platforms, such as Android, iOS, Tizen, Windows 10 Mobile and Windows Phone. VLC is also available on digital distribution platforms such as Apple's App Store, Google Play and Microsoft Store.</p>
-            <p>VLC supports many audio and video compression methods and file formats, including DVD-Video, video CD and streaming protocols. It is able to stream media over computer networks and to transcode multimedia files.</p>
-            
+            {wixapp.Description}
             <h3 className='text-primary pt-5'>Now Available for All platforms</h3>
             <div className='download-group mt-5'>
               <div className='btn-group'>
@@ -205,7 +241,8 @@ function VLCMediaPlayer() {
         </div>
       </div>
     </div>
-  );
+    );
+  }
 }
 
 export default VLCMediaPlayer;
