@@ -64,8 +64,8 @@ class VLCMediaPlayer extends Component {
           LatestVersion:findResponse.LatestVersion,
           Description:findResponse.Description,
           ImageURL:findResponse.ImageURL,
-        })
-      })
+        });
+      });
   }
 
   
