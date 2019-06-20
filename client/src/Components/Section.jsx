@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import {Link} from 'react-router-dom';
 
 
 import SearchBar from './SearchBar';
@@ -39,7 +40,7 @@ function Section() {
         <div className='row ml-2 text-left'>
           <div className='col-12'>
             <h4 className='text-dark'>Featured</h4>
-            <p>Browse all featured apps</p>
+            <p><Link to='/featured' className='text-dark'>Browse all featured apps</Link></p>
           </div>
         </div>
         <div className='row'>
@@ -52,7 +53,7 @@ function Section() {
         <div className='row ml-2 text-left'>
           <div className='col-12'>
             <h4 className='text-dark'>Trending this week</h4>
-            <p>See trending this week</p>
+            <p><Link to='/trending' className='text-dark'>See trending this week</Link></p>
           </div>
         </div>
         <div className='row'>
@@ -65,7 +66,7 @@ function Section() {
         <div className='row ml-2 text-left'>
           <div className='col-12'>
             <h4 className='text-dark'>Recently added</h4>
-            <p>A few we've added recently</p>
+            <p><Link to='/new' className='text-dark'>Browse recent apps</Link></p>
           </div>
         </div>
         <div className='row'>
