@@ -5,11 +5,11 @@ function Filters() {
   return (
     <div className='container-fluid ml-auto mr-auto hide-on-mobile'>
       <div className='row ml-5'>
-        <div className='col-12'>
-          <h4 className='text-dark'>Filter by Collections / Categories</h4>
+        <div className='col-12 text-left'>
+          <h4 className='small'><button className='btn btn-primary btn-sm' data-toggle="collapse" data-target="#demo">Filter by Collections / Categories</button></h4>
         </div>
       </div>
-      <div className='row text-center ml-5 mt-4 filters'>
+      <div id="demo" className='collapse row text-center ml-5 mt-4 filters'>
         <a href='/' className='col-xl-2 col-lg-3 col-md-4 col-xs-12 mr-4 ml-4 pt-2 pb-2 box-alt-2 mb-4'>
             All
         </a>
