@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { Helmet } from 'react-helmet';
 import {Link} from 'react-router-dom';
 
@@ -23,14 +23,33 @@ import ItemAudacity from './Items/Audacity';
 import ItemIDM from './Items/ItemIDM';
 import ItemChrome from './Items/Chrome';
 import ItemOBS from './Items/ItemOBS';
+import AppCard from './Items/AppCard';
 
-function Section() {
+class Section extends Component {
 
-  return (
-    <div>
+  constructor(props) {
+    super(props);
 
-        <SearchBar/>
-        <Filters/>
+    this.state = {
+      data: null,
+    };
+  }
+
+  // componentDidMount() {
+  //   fetch('https://api.wixware.com//app')
+  //   .then((Response) => Response.json())
+  //   .then((findResponse) => {
+  //     this.setState({
+  //       data:findResponse
+  //     });
+  //   });
+  // }
+
+  render() {
+    return (
+      <div>
+      <SearchBar/>
+      <Filters/>
       <Helmet>
         <title>Home - Download Free Software from Wixware</title>
         <meta name='description' content="We're building world's fastest web to serve you hundereds of software at no cost. Try Wixware - It's Free forever." />
@@ -46,7 +65,7 @@ function Section() {
         <div className='row'>
           <ItemOBS />
           <ItemCCleaner />
-          <ItemVLC />
+          <AppCard app='vlc' />
           <ItemBlender />
           <ItemAudacity />
         </div>
@@ -70,7 +89,7 @@ function Section() {
           </div>
         </div>
         <div className='row'>
-          <ItemFirefox />
+          <AppCard app='firefox' />
           <ItemIDM />
           <Item7Zip />
           <ItemVSCode />
@@ -82,7 +101,8 @@ function Section() {
         </div>
       </div>
     </div>
-  );
+    );
+  }
 }
 
 export default Section;
