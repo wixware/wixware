@@ -30,7 +30,7 @@ class ItemVLC extends Component {
     const App = this.state;
 
     return (
-      <Link to={'download-'+App.Permalink} className='no-decor col-xl-2 col-lg-2 col-md-2 col-sm-4 col-xs-12 mb-5 mt-auto pr-auto pl-auto mr-auto ml-auto box-alt'>
+      <Link to={'/download-'+App.Permalink} className='no-decor col-xl-2 col-lg-2 col-md-2 col-sm-4 col-xs-12 mb-5 mt-auto pr-auto pl-auto mr-auto ml-auto box-alt'>
         <div className='row'>
           <div className='col-12'>
             <img src={App.ImageURL} className='img-fluid pt-4 pl-4 pr-4' alt={App.Name} />
