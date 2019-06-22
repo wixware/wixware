@@ -19,7 +19,7 @@ function Footer() {
             </div>
           </div>
           <div className='col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12 text-right pt-1'>
-            <span className='small text-muted'>Copyright &copy; 2019 Wixware &amp; AN7</span>
+            <span className='small text-muted'>&copy; 2019 Wixware Open Media Group, by <a href='https://www.appzaib.com' target='_ublank'>Appzaib</a>.</span>
           </div>
         </div>
       </div>
