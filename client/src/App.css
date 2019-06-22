@@ -75,13 +75,14 @@
 
 
 .box-alt-2 {
-  background: #cccccc55 !important;
+  background: inherit !important;
   border-radius: 0px;
-  border: 1px solid #cccccc55;
+  border: 1px solid inherit;
 }
 
 .box-alt-2:hover {
-  background: #ccc !important;
+  background: #007bff !important;
+  color: #fff;
   transition-duration: .3s;
   transition-delay: 100ms;
   box-shadow: 10px 10px 20px -5px #00000033;
