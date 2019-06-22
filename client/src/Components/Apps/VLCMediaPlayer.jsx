@@ -8,7 +8,6 @@ import Item7Zip from '../Items/7Zip';
 import ItemCCleaner from '../Items/CCleaner';
 import ItemIDM from '../Items/ItemIDM';
 import ItemKMPlayer from '../Items/KMPlayer';
-import { stringify } from 'querystring';
 
 function downloadWindows64App () {
   window.open('https://cdn.appzaib.com/media/wixware/apps/vlc/3.0.6-683993258935243227979873999866792448443987/wixware.com-vlc-3.0.6-win64.exe');
@@ -82,9 +81,9 @@ class VLCMediaPlayer extends Component {
         <meta name='keywords' content='vlc, media player, free software, download free software, high speed software server' />
       </Helmet>
       <Filters/>
-      <div className='container-fluid mt-5 pl-5 pr-5'>
-        <div className='row'>
-          <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 box pl-5 pr-5 pt-5 pb-5'>
+      <div className='container-fluid mt-5'>
+        <div className='row pl-5 pr-5'>
+          <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 pl-5 pr-5 pt-5 pb-5'>
           <h1>Download {App.Name}</h1>
             <h5 className='text-muted'>By <span className='text-primary'><a href={App.DeveloperSite+URLParam} target='_ublank'>{App.Developer}</a></span></h5>
             <div className='row'>
@@ -104,30 +103,30 @@ class VLCMediaPlayer extends Component {
             <div className='download-group mt-5'>
               <div className='btn-group'>
                 <button rel='nofollow' disabled className='input-group-text'><i className='fab fa-windows'></i> &nbsp;&nbsp; Get it for Windows</button>
-                <button rel='nofollow' className='btn btn-primary btn-md' data-toggle='tooltip' title="Start download" onClick={downloadWindows32App}>Download 32bit App</button>
-                <button rel='nofollow' className='btn btn-primary btn-md' data-toggle='tooltip' title="Start download" onClick={downloadWindows64App}>Download 64bit App</button>
+                <button rel='nofollow' className='btn btn-primary btn-sm' data-toggle='tooltip' title="Start download" onClick={downloadWindows32App}>Download 32bit App</button>
+                <button rel='nofollow' className='btn btn-primary btn-sm' data-toggle='tooltip' title="Start download" onClick={downloadWindows64App}>Download 64bit App</button>
               </div>
             </div>
             <div className='download-group mt-5'>
               <div className='btn-group'>
                 <button rel='nofollow' disabled className='input-group-text'><i className='fab fa-linux'></i> &nbsp;&nbsp; Get it for Linux</button>
-                <button rel='nofollow' className='btn btn-primary btn-md' data-toggle="modal" data-target="#ubuntuModal" title="Install on Ubuntu"><i className='fab fa-ubuntu'></i> Ubuntu</button>
-                <button rel='nofollow' className='btn btn-primary btn-md' data-toggle="modal" data-target="#fedoraModal" title="Install on Fedora"><i className='fab fa-fedora'></i> Fedora</button>
+                <button rel='nofollow' className='btn btn-primary btn-sm' data-toggle="modal" data-target="#ubuntuModal" title="Install on Ubuntu"><i className='fab fa-ubuntu'></i> Ubuntu</button>
+                <button rel='nofollow' className='btn btn-primary btn-sm' data-toggle="modal" data-target="#fedoraModal" title="Install on Fedora"><i className='fab fa-fedora'></i> Fedora</button>
               </div>
             </div>
             <div className='download-group mt-5'>
               <div className='btn-group'>
                 <button rel='nofollow' disabled className='input-group-text'><i className='fab fa-apple'></i> &nbsp;&nbsp; Get it for Apple</button>
-                <button rel='nofollow' className='btn btn-primary btn-md' data-toggle='tooltip' title="Start download" onClick={downloadMac}>Download For Mac OS X</button>
-                <button rel='nofollow' className='btn btn-primary btn-md' data-toggle='tooltip' title="Start download" onClick={downloadMac}>iOS</button>
-                <button rel='nofollow' className='btn btn-primary btn-md' data-toggle='tooltip' title="Start download" onClick={downloadMac}>Apple TV</button>
+                <button rel='nofollow' className='btn btn-primary btn-sm' data-toggle='tooltip' title="Start download" onClick={downloadMac}>Download For Mac OS X</button>
+                <button rel='nofollow' className='btn btn-primary btn-sm' data-toggle='tooltip' title="Start download" onClick={downloadMac}>iOS</button>
+                <button rel='nofollow' className='btn btn-primary btn-sm' data-toggle='tooltip' title="Start download" onClick={downloadMac}>Apple TV</button>
               </div>
             </div>
             <div className='download-group mt-5'>
               <div className='btn-group'>
                 <button rel='nofollow' disabled className='input-group-text'><i className='fab fa-android'></i> &nbsp;&nbsp; Get it for Android</button>
-                <button rel='nofollow' className='btn btn-primary btn-md' data-toggle='tooltip' title="Start download" onClick={downloadAndroid32App}>Download x86.apk</button>
-                <button rel='nofollow' className='btn btn-primary btn-md' data-toggle='tooltip' title="Start download" onClick={downloadAndroid64App}>Download x86_64.apk</button>
+                <button rel='nofollow' className='btn btn-primary btn-sm' data-toggle='tooltip' title="Start download" onClick={downloadAndroid32App}>Download x86.apk</button>
+                <button rel='nofollow' className='btn btn-primary btn-sm' data-toggle='tooltip' title="Start download" onClick={downloadAndroid64App}>Download x86_64.apk</button>
               </div>
             </div>
               <small className='text-muted'>
@@ -136,8 +135,8 @@ class VLCMediaPlayer extends Component {
               </small>
           </div>
           <div className='col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center ml-auto'>
-            <div className='row'>
-              <div className='col-12 box'>
+            <div className='row box'>
+              <div className='col-12'>
                 <img src={App.ImageURL} className='mt-5 img-fluid' alt={App.Name} />
                 <br/>
                 <br/>
@@ -147,7 +146,7 @@ class VLCMediaPlayer extends Component {
                 {/* <span className='small'><a href='/archives/vlc'>Looking for older version?</a></span> */}
               </div>
               <button className='col-12 bg-primary text-white pt-3 pb-3 btn btn-lg' onClick={downloadWindows64App}>Download</button>
-              <div className='col-12 box mt-5 pb-5'>
+              {/* <div className='col-12 box mt-5 pb-5'>
                 <div className='col-12 mt-4 pointer' data-toggle='tooltip' title="Wixware Performance Score">
                 <h6 className='mb-5 text-muted'>Wixware Performance Test</h6>
                   <div className='row mt-4'>
@@ -175,7 +174,7 @@ class VLCMediaPlayer extends Component {
                     <div className="progress-bar" role="progressbar" style={progressBarTwo} aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
