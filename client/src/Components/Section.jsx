@@ -63,10 +63,10 @@ class Section extends Component {
           </div>
         </div>
         <div className='row'>
-          <ItemOBS />
+          <AppCard app='obs' />
           <ItemCCleaner />
           <AppCard app='vlc' />
-          <ItemBlender />
+          <AppCard app='blender' />
           <ItemAudacity />
         </div>
         <div className='row ml-2 text-left'>
