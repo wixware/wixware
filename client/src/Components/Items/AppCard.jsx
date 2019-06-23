@@ -7,7 +7,10 @@ class AppCard extends Component {
     super(props);
 
     this.state = {
-      data: null,
+      Name: "Loading...",
+      Permalink: "loading",
+      LatestVersion: "Loading...",
+      ImageURL: "Loading..."
     };
   }
 

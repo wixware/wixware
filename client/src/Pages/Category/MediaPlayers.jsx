@@ -1,10 +1,9 @@
 import React from 'react';
 
 import Helmet from 'react-helmet';
-
+import AppCard from '../../Components/Items/AppCard';
 import Filters from '../../Components/Filters';
-
-import ItemVLC from '../../Components/Items/VLC';
+\
 import ItemKLiteCodecPack from '../../Components/Items/KLiteCodecPack';
 import ItemKMPlayer from '../../Components/Items/KMPlayer';
 import ItemAudacity from '../../Components/Items/Audacity';
@@ -28,7 +27,7 @@ function CategoryMediaPlayers() {
         </div>
         <div className='col-12 align-self-center text-center mt-5 mb-5 pt-5 pb-5'>
           <div className='row'>
-            <ItemVLC />
+            <AppCard app='vlc' />
             <ItemKLiteCodecPack />
             <ItemKMPlayer />
             <ItemAudacity />
