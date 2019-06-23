@@ -67,7 +67,7 @@ class Section extends Component {
           <ItemCCleaner />
           <AppCard app='vlc' />
           <AppCard app='blender' />
-          <ItemAudacity />
+          <AppCard app='audacity' />
         </div>
         <div className='row ml-2 text-left'>
           <div className='col-12'>
