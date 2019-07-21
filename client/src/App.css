@@ -60,6 +60,7 @@
   background: #fff !important;
   border-radius: 0px;
   border: 1px solid #282c3422;
+  box-shadow: 5px 5px 10px -5px #00000030;
 }
 
 .box-alt:hover {
