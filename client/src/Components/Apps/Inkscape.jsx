@@ -3,9 +3,8 @@ import { Helmet } from 'react-helmet';
 
 import Filters from '../Filters';
 
-import ItemVLC from '../Items/VLC';
+import AppCard from '../Items/AppCard';
 import Item7Zip from '../Items/7Zip';
-import ItemAudacity from '../Items/Audacity';
 import ItemCCleaner from '../Items/CCleaner';
 import ItemVSCode from '../Items/VSCode';
 
@@ -128,8 +127,8 @@ function Inkscape() {
         <h3 className='text-primary mt-5 mb-3 ml-1'>Others you may like</h3>
         <div className='row text-center'>
           <ItemCCleaner />
-          <ItemVLC />
-          <ItemAudacity />
+          <AppCard app='firefox'/>
+          <AppCard app='vlc'/>
           <Item7Zip />
           <ItemVSCode />
         </div>
