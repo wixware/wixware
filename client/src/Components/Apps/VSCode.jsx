@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import Filters from '../Filters';
 
-import ItemVLC from '../Items/VLC';
+import AppCard from '../Items/AppCard';
 import ItemBlender from '../Items/Blender';
 import ItemIDM from '../Items/ItemIDM';
 import ItemCCleaner from '../Items/CCleaner';
@@ -125,7 +125,7 @@ function VSCode() {
         <h3 className='text-primary mt-5 mb-3 ml-1'>Others you may like</h3>
         <div className='row text-center'>
           <ItemCCleaner />
-          <ItemVLC />
+          <AppCard app='vlc'/>
           <ItemIDM />
           <ItemWinRAR />
           <ItemBlender />
