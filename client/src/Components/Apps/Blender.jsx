@@ -3,8 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import Filters from '../Filters';
 
-import ItemVLC from '../Items/VLC';
-import ItemAudacity from '../Items/Audacity';
+import AppCard from '../Items/AppCard';
 import ItemCorelCAD from '../Items/CorelCAD';
 import ItemCCleaner from '../Items/CCleaner';
 import ItemVSCode from '../Items/VSCode';
@@ -130,8 +129,8 @@ function Blender() {
           <ItemVSCode />
           <ItemCorelCAD />
           <ItemCCleaner />
-          <ItemVLC />
-          <ItemAudacity />
+          <AppCard app='firefox'/>
+          <AppCard app='vlc'/>
         </div>
       </div>
     </div>
