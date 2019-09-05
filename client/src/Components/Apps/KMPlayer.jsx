@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import Filters from '../Filters';
 
-import ItemVLC from '../Items/VLC';
+import AppCard from '../Items/AppCard';
 import ItemKLiteCodecPack from '../Items/KLiteCodecPack';
 import ItemVSCode from '../Items/VSCode';
 import ItemIDM from '../Items/ItemIDM';
@@ -122,7 +122,7 @@ function KMPlayer() {
       <div className='container-fluid mt-5 pl-5 pr-5 mt-4'>
         <h3 className='text-primary mt-5 mb-3 ml-1'>Others you may like</h3>
         <div className='row text-center'>
-          <ItemVLC />
+          <AppCard app='vlc'/>
           <ItemKLiteCodecPack />
           <ItemIDM />
           <ItemCCleaner />
