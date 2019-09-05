@@ -3,11 +3,11 @@ import { Helmet } from 'react-helmet';
 
 import Filters from '../Filters';
 
+import AppCard from '../Items/AppCard';
 import ItemIDM from '../Items/ItemIDM';
 import Item7Zip from '../Items/7Zip';
 import ItemCCleaner from '../Items/CCleaner';
 import ItemVSCode from '../Items/VSCode';
-import ItemFirefox from '../Items/Firefox';
 
 function Chrome() {
 
@@ -133,7 +133,7 @@ function Chrome() {
       <div className='container-fluid mt-5 pl-5 pr-5 mt-4'>
         <h3 className='text-primary mt-5 mb-3 ml-1'>Others you may like</h3>
         <div className='row text-center'>
-          <ItemFirefox />
+          <AppCard app='firefox'/>
           <ItemCCleaner />
           <ItemVSCode />
           <Item7Zip />
