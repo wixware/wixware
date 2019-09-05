@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import Filters from '../Filters';
 
-import ItemVLC from '../Items/VLC';
+import AppCard from '../Items/AppCard';
 import ItemCCleaner from '../Items/CCleaner';
 import ItemCamtasia from '../Items/Camtasia';
 import ItemFirefox from '../Items/Firefox';
@@ -123,8 +123,8 @@ function The7Zip() {
         <h3 className='text-primary mt-5 mb-3 ml-1'>Others you may like</h3>
         <div className='row text-center'>
           <ItemCCleaner />
-          <ItemVLC />
-          <ItemFirefox />
+          <AppCard app='vlc' />
+          <AppCard app='firefox' />
           <ItemKMPlayer />
           <ItemCamtasia />
         </div>
