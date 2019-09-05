@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import Filters from '../Filters';
 
-import ItemVLC from '../Items/VLC';
+import AppCard from '../Items/AppCard';
 import ItemIDM from '../Items/ItemIDM';
 import ItemVSCode from '../Items/VSCode';
 import Item7Zip from '../Items/7Zip';
@@ -123,7 +123,7 @@ function CorelCAD() {
         <h3 className='text-primary mt-5 mb-3 ml-1'>Others you may like</h3>
         <div className='row text-center'>
           <ItemCCleaner />
-          <ItemVLC />
+          <AppCard app='firefox'/>
           <ItemVSCode />
           <Item7Zip />
           <ItemIDM />
