@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import Filters from '../Filters';
 
-import ItemVLC from '../Items/VLC';
+import AppCard from '../Items/AppCard';
 import ItemIDM from '../Items/ItemIDM';
 import ItemBlender from '../Items/Blender';
 import ItemCCleaner from '../Items/CCleaner';
@@ -125,7 +125,7 @@ function Camtasia() {
         <div className='row text-center'>
           <ItemBlender />
           <ItemVSCode />
-          <ItemVLC />
+          <AppCard app='firefox'/>
           <ItemIDM />
           <ItemCCleaner />
         </div>
