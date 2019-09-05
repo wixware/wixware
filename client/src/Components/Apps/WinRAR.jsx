@@ -3,9 +3,8 @@ import { Helmet } from 'react-helmet';
 
 import Filters from '../Filters';
 
-import ItemVLC from '../Items/VLC';
+import AppCard from '../Items/AppCard';
 import ItemIDM from '../Items/ItemIDM';
-import ItemFirefox from '../Items/Firefox';
 import Item7Zip from '../Items/7Zip';
 import ItemCCleaner from '../Items/CCleaner';
 
@@ -126,9 +125,9 @@ function WinRAR() {
         <div className='row text-center'>
           <Item7Zip />
           <ItemCCleaner />
-          <ItemVLC />
+          <AppCard app='vlc'/>
           <ItemIDM />
-          <ItemFirefox />
+          <AppCard app='firefox'/>
         </div>
       </div>
     </div>
