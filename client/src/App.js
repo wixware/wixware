@@ -31,7 +31,6 @@ import Audacity from './Components/Apps/Audacity';
 import IDM from './Components/Apps/IDM';
 import Chrome from './Components/Apps/Chrome';
 import Search from './Pages/Search';
-// import TopMenu from './Components/TopMenu';
 import CategoryDownloaders from './Pages/Category/Downloaders';
 import CategoryAntivirus from './Pages/Category/Antivirus';
 import CategoryForDevelopers from './Pages/Category/ForDevelopers';
@@ -43,8 +42,6 @@ import CategoryCDDVD from './Pages/Category/CDDVD';
 import CategoryFileCompressors from './Pages/Category/FileCompressors';
 import CategoryDrivers from './Pages/Category/Drivers';
 import OBS from './Components/Apps/OBS';
-// import SearchBar from './Components/SearchBar';
-// import Filters from './Components/Filters';
 
 function Home() {
   return (
@@ -53,7 +50,6 @@ function Home() {
         <ScrollToTop />
         <Header/>
         <Jumbotron />
-        {/* <TopMenu /> */}
         <Route path='/' exact component={Section} />
         <Route path='/category/downloaders' component={CategoryDownloaders} />
         <Route path='/category/antivirus' component={CategoryAntivirus} />
