@@ -6,7 +6,6 @@ import Filters from '../Filters';
 import AppCard from '../Items/AppCard';
 import ItemCCleaner from '../Items/CCleaner';
 import ItemCamtasia from '../Items/Camtasia';
-import ItemFirefox from '../Items/Firefox';
 import ItemKMPlayer from '../Items/KMPlayer';
 
 function The7Zip() {
