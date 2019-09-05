@@ -6,23 +6,18 @@ import {Link} from 'react-router-dom';
 import SearchBar from './SearchBar';
 import Filters from './Filters';
 
-import ItemVLC from './Items/VLC';
 import ItemCamtasia from './Items/Camtasia';
 import ItemCCleaner from './Items/CCleaner';
 import ItemInkscape from './Items/InkScape';
-import ItemBlender from './Items/Blender';
 import ItemVSCode from './Items/VSCode';
-import ItemFirefox from './Items/Firefox';
 import ItemCoreCAD from './Items/CorelCAD';
 import ItemKLite from './Items/KLiteCodecPack';
 import ItemAvast from './Items/Avast';
 import ItemWinRAR from './Items/ItemWinRAR';
 import ItemKMPlayer from './Items/KMPlayer';
 import Item7Zip from './Items/7Zip';
-import ItemAudacity from './Items/Audacity';
 import ItemIDM from './Items/ItemIDM';
 import ItemChrome from './Items/Chrome';
-import ItemOBS from './Items/ItemOBS';
 import AppCard from './Items/AppCard';
 
 class Section extends Component {
