@@ -3,8 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import Filters from '../Filters';
 
-import ItemVLC from '../Items/VLC';
-import ItemFirefox from '../Items/Firefox';
+import AppCard from '../Items/AppCard';
 import ItemCorelCAD from '../Items/CorelCAD';
 import ItemInkscape from '../Items/InkScape';
 import ItemIDM from '../Items/ItemIDM';
@@ -126,10 +125,10 @@ function CCleaner() {
       <div className='container-fluid mt-5 pl-5 pr-5 mt-4'>
         <h3 className='text-primary mt-5 mb-3 ml-1'>Others you may like</h3>
         <div className='row text-center'>
-          <ItemFirefox />
           <ItemInkscape />
-          <ItemVLC />
           <ItemIDM />
+          <AppCard app='firefox'/>
+          <AppCard app='vlc'/>
           <ItemCorelCAD />
         </div>
       </div>
