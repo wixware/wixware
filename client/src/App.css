@@ -208,9 +208,6 @@ footer {
   text-decoration: none;
 }
 
-
-
-
 /* Media Queries */
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -281,26 +278,34 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 
 @media only screen and (min-width: 768px) {
-  .navbar {
-    max-height: 6vh !important;
-    line-height: 4.5vh !important;
+  
+  .nav {
+    min-height: 5vh !important;
   }
   .nav-item > {
-    margin-bottom: 0rem !important;
-    margin-top: 0rem !important;
+    margin-top: none !important;
+    margin-bottom: none !important;
+    padding-top: none !important;
+    padding-bottom: none !important;
   }
   .nav-item:hover {
+    background: #cccccc;
     transition-duration: .4s;
     transition-delay: .1s;
-    background: #007bff;
-    color: #fff !important;
   }
+  
   .nav-item-active > a {
     transition-duration: .4s;
     transition-delay: .1s;
     background: #007bff;
     color: #fff !important;
   }
+
+  .nav-link {
+    margin-left: .51rem !important;
+    margin-right: .51rem !important;
+  }
+
   .nav-link:hover {
     transition-duration: .3s;
     transition-delay: .1s;

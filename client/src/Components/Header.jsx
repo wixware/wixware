@@ -14,19 +14,25 @@ function Header() {
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent-4">
         <ul className="navbar-nav ml-auto">
+          <li className='nav-link active disabled'>Find apps for</li>
         <li className="nav-item active">
-            <a className="nav-link" href="/">
-              Home
-            </a>
-          </li>
+          <a className="nav-link" href="/">
+            <big className='text-primary'><i className='fab fa-windows'></i></big>
+          </a>
+        </li>
+        <li className="nav-item active">
+          <a className="nav-link" href="/">
+            <big className='text-primary'><i className='fab fa-linux'></i></big>
+          </a>
+        </li>
           <li className="nav-item active">
             <Link className="nav-link" to="/about">
-              About
+            <big className='text-primary'><i className='fab fa-android'></i></big>
             </Link>
           </li>
           <li className="nav-item active">
-            <Link className="nav-link" to="/contact">
-              Contact
+            <Link className="nav-link" to="/about">
+            <big className='text-primary'><i className='fab fa-apple'></i></big>
             </Link>
           </li>
         </ul>
