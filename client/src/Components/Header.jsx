@@ -16,24 +16,24 @@ function Header() {
         <ul className="navbar-nav ml-auto">
           <li className='nav-link active disabled'>Find apps for</li>
         <li className="nav-item active">
-          <a className="nav-link" href="/">
+          <a className="nav-link" href="https://windows.wixware.com/?utm_source=wixware&trigger=header">
             <big className='text-primary'><i className='fab fa-windows'></i></big>
           </a>
         </li>
         <li className="nav-item active">
-          <a className="nav-link" href="/">
+          <a className="nav-link" href="https://linux.wixware.com/?utm_source=wixware&trigger=header">
             <big className='text-primary'><i className='fab fa-linux'></i></big>
           </a>
         </li>
           <li className="nav-item active">
-            <Link className="nav-link" to="/about">
+            <a className="nav-link" href="https://android.wixware.com/?utm_source=wixware&trigger=header">
             <big className='text-primary'><i className='fab fa-android'></i></big>
-            </Link>
+            </a>
           </li>
           <li className="nav-item active">
-            <Link className="nav-link" to="/about">
+            <a className="nav-link" href="https://mac.wixware.com/?utm_source=wixware&trigger=header">
             <big className='text-primary'><i className='fab fa-apple'></i></big>
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
