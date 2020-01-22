@@ -58,15 +58,17 @@
 
 .box-alt {
   background: #fff !important;
-  border-radius: 0px;
-  border: 1px solid #282c3422;
+  border-radius: 7px;
+  border: 2px solid #282c3422; 
+  /* # */
   box-shadow: 5px 5px 10px -5px #00000030;
 }
 
 .box-alt:hover {
   cursor: pointer;
-  transition-duration: .3s;
+  transition-duration: .8s;
   transition-delay: 100ms;
+  border: 2px solid #007bff;
   box-shadow: 10px 10px 20px -5px #00000030;
 }
 
@@ -180,7 +182,7 @@ footer {
 
 
 .navbar {
-  border-bottom: 1px solid #cccccc55;
+  border-bottom: 2px solid #007bff;
   box-shadow: 0px 0px 5px 1px #00000010 !important;
 }
 
