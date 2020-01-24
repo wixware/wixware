@@ -314,3 +314,11 @@ only screen and (min-device-pixel-ratio : 1.5) {
     color: #fff !important;
   }
 }
+
+.mh-200 {
+  max-height: 200px;
+}
+
+.mh-800 {
+  min-height: 403px;
+}

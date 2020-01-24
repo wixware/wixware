@@ -71,11 +71,25 @@ class Section extends Component {
           </div>
         </div>
         <div className='row'>
+          <AppCard app='obs' />
+          <ItemCCleaner />
+          <AppCard app='vlc' />
+          <AppCard app='blender' />
+          <AppCard app='audacity' />
+        </div>
+        <div className='row'>
           <ItemInkscape />
           <ItemAvast />
           <ItemCamtasia />
           <ItemChrome />
           <ItemKMPlayer />
+        </div>
+        <div className='row'>
+          <AppCard app='obs' />
+          <ItemCCleaner />
+          <AppCard app='vlc' />
+          <AppCard app='blender' />
+          <AppCard app='audacity' />
         </div>
         <div className='row ml-2 text-left'>
           <div className='col-12'>
