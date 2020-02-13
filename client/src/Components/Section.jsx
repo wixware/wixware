@@ -51,9 +51,9 @@ class Section extends Component {
         <meta name='keywords' content='best web for software, fastest website for software' />
       </Helmet>
       <div className='container-fluid pl-5 pr-5 mt-0'>
-        <div className='row ml-2 text-left'>
+        <div className='row ml-2 text-left mt-5'>
           <div className='col-12'>
-            <h4 className='text-dark'>Featured</h4>
+          <h1 className='text-primary display-4'>New &amp; Updated</h1>
             <p><Link to='/featured' className='text-dark'>Browse all featured apps</Link></p>
           </div>
         </div>
@@ -64,9 +64,9 @@ class Section extends Component {
           <AppCard app='blender' />
           <AppCard app='audacity' />
         </div>
-        <div className='row ml-2 text-left'>
+        <div className='row ml-2 text-left mt-5'>
           <div className='col-12'>
-            <h4 className='text-dark'>Trending this week</h4>
+            <h1 className='text-primary display-4'>Trending</h1>
             <p><Link to='/trending' className='text-dark'>See trending this week</Link></p>
           </div>
         </div>

@@ -4,7 +4,15 @@ import SearchBar from './SearchBar';
 function Jumbotron() {
   return (
     <div className='container-fluid'>
-        <div className='jumbotron bg-transparent text-white mb-auto mt-5 no-border-radius'>
+        <div className='jumbotron bg-transparent text-white mb-auto no-border-radius'>
+          <div className='row'>
+            <div className='col-6'>
+              <h1 className='display-4 text-primary'>Featured</h1>
+            </div>
+            <div className='col-6'>
+
+            </div>
+          </div>
           <div className='row'>
             <div className='col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12'>
               <div className='card bg-transparent'>
