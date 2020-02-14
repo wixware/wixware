@@ -7,7 +7,7 @@ function Jumbotron() {
         <div className='jumbotron bg-transparent text-white mb-auto no-border-radius'>
           <div className='row'>
             <div className='col-6'>
-              <h1 className='display-4 text-primary'>Featured</h1>
+              <h3 className='display-4 text-primary'>Featured</h3>
             </div>
             <div className='col-6'>
 
