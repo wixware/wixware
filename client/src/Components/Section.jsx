@@ -53,7 +53,7 @@ class Section extends Component {
       <div className='container-fluid pl-5 pr-5 mt-0'>
         <div className='row ml-2 text-left mt-5'>
           <div className='col-12'>
-          <h1 className='text-primary display-4'>New &amp; Updated</h1>
+          <h3 className='text-primary'>New &amp; Updated</h3>
             <p><Link to='/featured' className='text-dark'>Browse all featured apps</Link></p>
           </div>
         </div>
@@ -66,7 +66,7 @@ class Section extends Component {
         </div>
         <div className='row ml-2 text-left mt-5'>
           <div className='col-12'>
-            <h1 className='text-primary display-4'>Trending</h1>
+            <h3 className='text-primary'>Trending Apps</h3>
             <p><Link to='/trending' className='text-dark'>See trending this week</Link></p>
           </div>
         </div>
