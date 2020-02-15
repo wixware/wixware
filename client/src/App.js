@@ -49,7 +49,7 @@ function Home() {
       <Router>
         <ScrollToTop />
         <Header/>
-        <Jumbotron />
+        {/* <Jumbotron /> */}
         <Route path='/' exact component={Section} />
         <Route path='/category/downloaders' component={CategoryDownloaders} />
         <Route path='/category/antivirus' component={CategoryAntivirus} />
