@@ -83,7 +83,7 @@ class VLCMediaPlayer extends Component {
       <Filters/>
       <div className='container-fluid mt-5'>
         <div className='row pl-5 pr-5'>
-          <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 pl-5 pr-5 pt-5 pb-5'>
+          <div className='col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 pl-5 pr-5 pt-5 pb-5 box'>
           <h1>Download {App.Name}</h1>
             <h5 className='text-muted'>By <span className='text-primary'><a href={App.DeveloperSite+URLParam} target='_ublank'>{App.Developer}</a></span></h5>
             <div className='row'>
