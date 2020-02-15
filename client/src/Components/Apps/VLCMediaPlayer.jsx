@@ -135,8 +135,8 @@ class VLCMediaPlayer extends Component {
               </small>
           </div>
           <div className='col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center ml-auto'>
-            <div className='row box'>
-              <div className='col-12'>
+            <div className='row'>
+              <div className='col-12 box'>
                 <img src={App.ImageURL} className='mt-5 img-fluid' alt={App.Name} />
                 <br/>
                 <br/>
@@ -146,35 +146,35 @@ class VLCMediaPlayer extends Component {
                 {/* <span className='small'><a href='/archives/vlc'>Looking for older version?</a></span> */}
               </div>
               <button className='col-12 bg-primary text-white pt-3 pb-3 btn btn-lg' onClick={downloadWindows64App}>Download</button>
-              {/* <div className='col-12 box mt-5 pb-5'>
-                <div className='col-12 mt-4 pointer' data-toggle='tooltip' title="Wixware Performance Score">
+              <div className='col-12 box mt-5 pb-5 mt-5'>
+                <div className='col-12 mt-4 pointer' data-toggle='tooltip' title="Wixware Test Points">
                 <h6 className='mb-5 text-muted'>Wixware Performance Test</h6>
                   <div className='row mt-4'>
                     <div className='col-8'>
                       <img className='' src="https://cdn.appzaib.com/public/wixware/img/windows8.png" alt="Windows 8"/>
                     </div>
                     <div className='col-4 text-right'>
-                      <span className='small'>WPS 8.2/10</span>
+                      <span className='small'>WixPoints 8.2/10</span>
                     </div>
                   </div>
                   <div className="progress pointer mt-3" style={progressBarStyles}>
                     <div className="progress-bar" role="progressbar" style={progressBarOne} aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
-                <div className='col-12 pointer' data-toggle='tooltip' title="Wixware Performance Score">
+                <div className='col-12 pointer' data-toggle='tooltip' title="Wixware Test Points">
                   <div className='row mt-4'>
                     <div className='col-8'>
                       <img className='' src="https://cdn.appzaib.com/public/wixware/img/windows10.png" alt="Windows 10"/>
                     </div>
                     <div className='col-4 text-right'>
-                      <span className='small'>WPS 8.9/10</span>
+                      <span className='small'>WixPoints 8.9/10</span>
                     </div>
                   </div>
                   <div className="progress pointer mt-3" style={progressBarStyles}>
                     <div className="progress-bar" role="progressbar" style={progressBarTwo} aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

@@ -95,27 +95,27 @@ function OBS() {
                 <p className='mb-2 text-primary' data-toggle='tooltip' title='Wixware Loves Open Source'><i className='fa fa-heart'></i> <small className=''>Wixware Favorite</small></p>
               </div>
               <div className='col-12 box mt-5 pb-5'>
-                <div className='col-12 mt-4 pointer' data-toggle='tooltip' title="Wixware Performance Score">
+                <div className='col-12 mt-4 pointer' data-toggle='tooltip' title="Wixware Test Points">
                 <h6 className='mb-5 text-muted'>Wixware Performance Test</h6>
                   <div className='row mt-4'>
                     <div className='col-8'>
                       <img className='float-left' src="https://cdn.appzaib.com/public/wixware/img/windows8.png" alt="Windows 8"/>
                     </div>
                     <div className='col-4 text-right'>
-                      <span className='small'>WPS 8.8/10</span>
+                      <span className='small'>WTP 8.8/10</span>
                     </div>
                   </div>
                   <div className="progress pointer mt-3" style={progressBarStyles}>
                     <div className="progress-bar" role="progressbar" style={progressBarOne} aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
-                <div className='col-12 pointer' data-toggle='tooltip' title="Wixware Performance Score">
+                <div className='col-12 pointer' data-toggle='tooltip' title="Wixware Test Points">
                   <div className='row mt-4'>
                     <div className='col-8'>
                       <img className='float-left' src="https://cdn.appzaib.com/public/wixware/img/windows10.png" alt="Windows 10"/>
                     </div>
                     <div className='col-4 text-right'>
-                      <span className='small'>WPS 8.9/10</span>
+                      <span className='small'>WTP 8.9/10</span>
                     </div>
                   </div>
                   <div className="progress pointer mt-3" style={progressBarStyles}>
