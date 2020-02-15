@@ -1,13 +1,12 @@
 import React from 'react';
-import SearchBar from './SearchBar';
 
 function Jumbotron() {
   return (
-    <div className='container-fluid'>
-        <div className='jumbotron bg-transparent text-white mb-auto no-border-radius'>
+    <div className='container-fluid mt-0'>
+        <div className='jumbotron bg-transparent text-white no-border-radius'>
           <div className='row'>
             <div className='col-6'>
-              <h3 className='display-4 text-primary'>Featured</h3>
+              <h3 className='text-primary'>Featured</h3>
             </div>
             <div className='col-6'>
 

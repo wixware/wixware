@@ -15,22 +15,22 @@ function Header() {
         <ul className="navbar-nav ml-auto">
           <li className='nav-link active disabled'>Find apps for</li>
         <li className="nav-item active">
-          <a className="nav-link" href="https://windows.wixware.com/?utm_source=wixware&trigger=header">
+          <a className="nav-link" href="/windows/?utm_source=wixware&trigger=header">
             <big className='text-primary'><i className='fab fa-windows'></i></big>
           </a>
         </li>
         <li className="nav-item active">
-          <a className="nav-link" href="https://linux.wixware.com/?utm_source=wixware&trigger=header">
+          <a className="nav-link" href="/linux/?utm_source=wixware&trigger=header">
             <big className='text-primary'><i className='fab fa-linux'></i></big>
           </a>
         </li>
           <li className="nav-item active">
-            <a className="nav-link" href="https://android.wixware.com/?utm_source=wixware&trigger=header">
+            <a className="nav-link" href="/android/?utm_source=wixware&trigger=header">
             <big className='text-primary'><i className='fab fa-android'></i></big>
             </a>
           </li>
           <li className="nav-item active">
-            <a className="nav-link" href="https://mac.wixware.com/?utm_source=wixware&trigger=header">
+            <a className="nav-link" href="/macintosh/?utm_source=wixware&trigger=header">
             <big className='text-primary'><i className='fab fa-apple'></i></big>
             </a>
           </li>
